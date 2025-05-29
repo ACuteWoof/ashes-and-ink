@@ -1,40 +1,47 @@
+import Header from "@/components/header";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { FaSearch, FaShoppingCart } from "react-icons/fa";
+import Image from "next/image";
 
 export default async function Home() {
   return (
-    <main className="bg-stone-200 h-screen flex flex-col gap-0">
-      <header className="w-full flex items-center h-16 px-8 py-4 justify-between gap-8">
-        <div className="prose prose-stone">
-          <h3>Ashes & Ink</h3>
+    <main className="bg-stone-200 min-h-screen flex flex-col gap-0">
+      <Header />
+      <div className="h-[calc(100vh-var(--spacing)*16)] grid grid-cols-3">
+        <div></div>
+        <div className="flex flex-col px-12 items-center justify-center col-span-2">
+          <HeroBooks />
         </div>
-        <div className="flex gap-2 items-center">
-          <Button variant="link" className="cursor-pointer">
-            Books
-          </Button>
-          <Button variant="link" className="cursor-pointer">
-            Collections
-          </Button>
-          <div className="flex item-center">
-            <Input
-              className="border-stone-400 shadow-none rounded-r-none border-r-0"
-              placeholder="Search..."
-            />
-            <Button
-              variant="outline"
-              className="cursor-pointer !bg-transparent shadow-none !border-stone-400 rounded-l-none hover:!bg-stone-300"
-	      size="icon"
-            >
-              <FaSearch />
-            </Button>
-          </div>
-          <Button variant="outline" size="icon" className="cursor-pointer !bg-transparent shadow-none !border-stone-400 hover:!bg-stone-300">
-            <FaShoppingCart />
-          </Button>
-        </div>
-      </header>
-      <div className="h-[calc(100vh-var(--spacing)*16)] grid grid-cols-2"></div>
+      </div>
     </main>
+  );
+}
+
+function HeroBooks() {
+  return (
+    <div>
+      {/* <Image */}
+      {/*   src="/white-nights-notes-from-underground.png" */}
+      {/*   alt="White Nights & Notes From Underground - Fyodor Dostoevsky, Constance Garnett" */}
+      {/*   width={5000} */}
+      {/*   height={8000} */}
+      {/* /> */}
+      <div className="flex gap-1 border-b-2 border-b-black">
+        <div className='h-[80vh] w-[50vh] bg-stone-800 bg-[url("/white-nights-notes-from-underground.png")] bg-contain flex'>
+          <div className="h-[80vh] w-[50vh] bg-stone-800/50 backdrop-grayscale-100 bg-contain flex flex-col-reverse opacity-0 hover:opacity-100 transition-all duration-150">
+            <div className="p-4 bg-stone-800 prose prose-stone prose-invert">
+              <h4>{"Ashes & Ink Dostoevsky Collection"}</h4>
+              <p>
+                View the {"Ashes & Ink"} collection of Dostoevsky's most popular
+                books.
+              </p>
+              <Button variant="outline">Browse Collection</Button>
+            </div>
+          </div>
+        </div>
+        <div className="h-[80vh] w-[10vh] bg-stone-800 hover:bg-stone-900"></div>
+        <div className="h-[80vh] w-[10vh] rotate-4 bg-stone-800 hover:bg-stone-900 mx-5"></div>
+        <div className="h-[80vh] w-[10vh] bg-stone-800 hover:bg-stone-900"></div>
+      </div>
+    </div>
   );
 }

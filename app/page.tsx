@@ -1,47 +1,29 @@
 import Header from "@/components/header";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import HeroBooks from "./sections/hero";
+import HomeBooks from "./sections/home-books";
+import Footer from "./sections/footer";
 
 export default async function Home() {
   return (
-    <main className="bg-stone-200 min-h-screen flex flex-col gap-0">
+    <main className="bg-white min-h-screen flex flex-col gap-0">
       <Header />
-      <div className="h-[calc(100vh-var(--spacing)*16)] grid grid-cols-3">
-        <div></div>
-        <div className="flex flex-col px-12 items-center justify-center col-span-2">
+      <div className="lg:h-[calc(100vh-var(--spacing)*16)] flex flex-col gap-4 lg:grid lg:grid-cols-3 p-8 lg:p-0 lg:pt-12 lg:pl-12 bg-gradient-to-b from-white via-stone-100 to-stone-200">
+        <div className="flex flex-col gap-8">
+          <h1 className="text-[20vw] lg:text-[20vh] leading-[20vw] lg:leading-[20vh]">
+            {"Ashes & Ink"}
+          </h1>
+          <p className="hidden lg:block text-[2vh]">
+            Bringing classic books back in style to a people of the modern
+            Fahrenheit 451 dystopia.
+          </p>
+        </div>
+        <div className="flex flex-col px-12 items-center justify-center lg:col-span-2">
           <HeroBooks />
         </div>
       </div>
+      <HomeBooks />
+      <Footer />
     </main>
-  );
-}
-
-function HeroBooks() {
-  return (
-    <div>
-      {/* <Image */}
-      {/*   src="/white-nights-notes-from-underground.png" */}
-      {/*   alt="White Nights & Notes From Underground - Fyodor Dostoevsky, Constance Garnett" */}
-      {/*   width={5000} */}
-      {/*   height={8000} */}
-      {/* /> */}
-      <div className="flex gap-1 border-b-2 border-b-black">
-        <div className='h-[80vh] w-[50vh] bg-stone-800 bg-[url("/white-nights-notes-from-underground.png")] bg-contain flex'>
-          <div className="h-[80vh] w-[50vh] bg-stone-800/50 backdrop-grayscale-100 bg-contain flex flex-col-reverse opacity-0 hover:opacity-100 transition-all duration-150">
-            <div className="p-4 bg-stone-800 prose prose-stone prose-invert">
-              <h4>{"Ashes & Ink Dostoevsky Collection"}</h4>
-              <p>
-                View the {"Ashes & Ink"} collection of Dostoevsky's most popular
-                books.
-              </p>
-              <Button variant="outline">Browse Collection</Button>
-            </div>
-          </div>
-        </div>
-        <div className="h-[80vh] w-[10vh] bg-stone-800 hover:bg-stone-900"></div>
-        <div className="h-[80vh] w-[10vh] rotate-4 bg-stone-800 hover:bg-stone-900 mx-5"></div>
-        <div className="h-[80vh] w-[10vh] bg-stone-800 hover:bg-stone-900"></div>
-      </div>
-    </div>
   );
 }

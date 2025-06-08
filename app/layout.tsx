@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Serif } from "next/font/google";
 import "./globals.css";
-
-const sans = IBM_Plex_Serif({
-  subsets: ["latin"],
-  weight: "400",
-});
+import { sans } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Ashes & Ink",

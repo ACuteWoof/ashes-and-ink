@@ -1,12 +1,21 @@
+import { caligraphy } from "@/app/fonts";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import Image from "next/image";
 import { FaSearch, FaShoppingCart } from "react-icons/fa";
 
 export default function Header() {
   return (
     <header className="w-full flex items-center h-16 px-8 py-4 justify-between gap-8">
-      <div className="prose prose-stone">
-        <h3>Ashes & Ink</h3>
+      <div className="flex gap-4 items-center">
+        <Image
+          src="/header-icon.png"
+          width={500}
+          height={500}
+          alt="Ashes and Ink Logo"
+          className="h-8 w-auto"
+        />
+        <h3 className={"text-xl font-semibold " + caligraphy.className}>Ashes & Ink</h3>
       </div>
       <div className="flex gap-2 items-center">
         <Button variant="link" className="cursor-pointer">

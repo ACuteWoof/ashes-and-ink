@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { caligraphy } from "../fonts";
 
 type book = {
   image: string;
@@ -26,10 +27,10 @@ const books: book[] = new Array(50).fill({
 
 export default function HomeBooks() {
   return (
-    <div className="flex flex-col gap-4 p-8 min-h-screen max-h-[200vh] bg-gradient-to-b from-stone-200 to-stone-300 overflow-hidden relative">
+    <div className="flex flex-col gap-4 p-8 min-h-screen max-h-[200vh] bg-stone-50 overflow-hidden relative">
       <div className="flex flex-col items-center justify-center py-12">
         <div className="border-y-2 border-y-stone-950 md:min-w-md text-center w-fit py-8 px-12">
-          <h1 className="text-3xl">Our Books</h1>
+          <h1 className={"text-3xl " + caligraphy.className}>Our Books</h1>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -46,8 +47,14 @@ export default function HomeBooks() {
             />
           ))}
       </div>
-      <div className="h-[20vh] bg-gradient-to-b from-transparent via-stone-300 to-stone-300 absolute bottom-0 left-0 right-0 flex flex-col justify-center items-center">
-        <Button variant="outline" className="bg-stone-700 text-stone-100" size="lg">Browse All Books</Button>
+      <div className="h-[20vh] bg-gradient-to-b from-transparent via-stone-50 to-stone-50 absolute bottom-0 left-0 right-0 flex flex-col justify-center items-center">
+        <Button
+          variant="outline"
+          className="bg-stone-700 text-stone-100"
+          size="lg"
+        >
+          Browse All Books
+        </Button>
       </div>
     </div>
   );
@@ -76,11 +83,13 @@ function Book({
         width={coverwidth}
         height={coverheight}
       />
-      <div className="p-4 bg-stone-800 prose prose-stone prose-invert">
-        <h4>
-          {title} - {author}
-        </h4>
-        <p className="line-clamp-3">{description}</p>
+      <div className="p-4 bg-stone-800 w-full">
+        <div className="prose prose-stone prose-invert">
+          <h4>
+            {title} - {author}
+          </h4>
+          <p className="line-clamp-3">{description}</p>
+        </div>
       </div>
     </div>
   );

@@ -24,37 +24,37 @@ export default function HeroBooks() {
         </div>
         <div className="h-[80vw] w-[10vw] lg:h-[80vh] lg:w-[10vh] bg-stone-900 flex flex-col justify-around border-4 border-stone-500">
           <div className="border-y-2 border-y-stone-500" />
-	  <div />
-	  <div />
-	  <div />
-	  <div />
-	  <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
           <div className="border-y-2 border-y-stone-500" />
           <div className="border-y-2 border-y-stone-500" />
           <div className="border-y-2 border-y-stone-500" />
         </div>
         <div className="h-[80vw] w-[10vw] lg:h-[80vh] lg:w-[10vh] rotate-4 bg-stone-900 mx-2 lg:mx-5 flex flex-col justify-around border-4 border-stone-500">
           <div className="border-y-2 border-y-stone-500" />
-	  <div />
-	  <div />
-	  <div />
-	  <div />
-	  <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
           <div className="border-y-2 border-y-stone-500" />
           <div className="border-y-2 border-y-stone-500" />
           <div className="border-y-2 border-y-stone-500" />
-	</div>
+        </div>
         <div className="h-[80vw] w-[10vw] lg:h-[80vh] lg:w-[10vh] bg-stone-900 flex flex-col justify-around border-4 border-stone-500">
           <div className="border-y-2 border-y-stone-500" />
-	  <div />
-	  <div />
-	  <div />
-	  <div />
-	  <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
           <div className="border-y-2 border-y-stone-500" />
           <div className="border-y-2 border-y-stone-500" />
           <div className="border-y-2 border-y-stone-500" />
-	</div>
+        </div>
       </div>
     </div>
   );

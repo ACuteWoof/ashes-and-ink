@@ -4,7 +4,7 @@ import { caligraphy } from "../fonts";
 
 export default function Footer() {
   return (
-    <footer className="p-8 flex flex-col items-center bg-stone-100 min-h-screen">
+    <footer className="p-8 flex flex-col items-center bg-stone-100">
       <div className="flex flex-col items-center justify-center py-12">
         <div className="border-y-2 border-y-stone-950 md:min-w-md text-center w-fit py-8 px-12">
           <h1 className={"text-3xl " + caligraphy.className}>{"About Ashes & Ink"}</h1>

@@ -26,13 +26,14 @@ export default function Header({ page }: { page?: number }) {
         </h3>
       </div>
       <div className="flex gap-2 items-center">
-        {page === 1 ? (
+        {page !== 0 && (
           <Link href="/">
             <Button variant="link" className="cursor-pointer">
               Home
             </Button>
           </Link>
-        ) : (
+        )}
+        {page !== 1 && (
           <Link href="/books">
             <Button variant="link" className="cursor-pointer">
               Books

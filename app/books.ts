@@ -54,4 +54,32 @@ export const books: Book[] = [
       },
     ],
   },
+  {
+    image: "/crime-and-punishment.png",
+    title: "Crime and Punishment",
+    author: "Fyodor Dostoevsky",
+    description: `The novel follows a desperate former law student, Raskolnikov, stricken by poverty and taken by the idea of the Great Man who discards all traditional morality. Raskolnikov commits a murder hoping to gain enough money from the murder to lift him out of poverty, but realises that he is not the great man he thought himself to be, and that he cannot escape his conscience. The remaining chapters then follow his punishment and end with his hope for redemption.`,
+    cover: {
+      height: 8,
+      width: 5,
+    },
+    id: "845yvg2",
+    price: 22.67,
+    copyright:
+      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+    contributors:
+      "By: Fyodor Dostoevsky, Translated by: Constance Garnett, Compiled by: Vithushan Sutharsan",
+    category: "Fiction",
+    language: "English",
+    pages: 635,
+    binding: "Paperback Perfect Bound",
+    dimensions: "Novella (5 x 8 in / 127 x 203 mm)",
+    explicit: false,
+    buyLinks: [
+      {
+        from: "Lulu",
+        link: "https://www.lulu.com/shop/fyodor-dostoevsky-and-constance-garnett-and-vithushan-sutharsan/crime-and-punishment/paperback/product-845yvg2.html",
+      },
+    ],
+  },
 ];

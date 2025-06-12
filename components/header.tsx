@@ -2,9 +2,15 @@ import { caligraphy } from "@/app/fonts";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
-import { FaSearch, FaShoppingCart } from "react-icons/fa";
+import Link from "next/link";
+import { FaSearch } from "react-icons/fa";
 
-export default function Header() {
+export default function Header({ page }: { page?: number }) {
+  /*
+   * 0: home
+   * 1: books
+   */
+
   return (
     <header className="w-full flex items-center h-16 px-8 py-4 justify-between gap-8">
       <div className="flex gap-4 items-center">
@@ -15,15 +21,29 @@ export default function Header() {
           alt="Ashes and Ink Logo"
           className="h-8 w-auto"
         />
-        <h3 className={"text-xl font-semibold " + caligraphy.className}>Ashes & Ink</h3>
+        <h3 className={"text-xl font-semibold " + caligraphy.className}>
+          Ashes & Ink
+        </h3>
       </div>
       <div className="flex gap-2 items-center">
-        <Button variant="link" className="cursor-pointer">
-          Books
-        </Button>
-        <Button variant="link" className="cursor-pointer">
-          Collections
-        </Button>
+        {page === 1 ? (
+          <Link href="/">
+            <Button variant="link" className="cursor-pointer">
+              Home
+            </Button>
+          </Link>
+        ) : (
+          <Link href="/books">
+            <Button variant="link" className="cursor-pointer">
+              Books
+            </Button>
+          </Link>
+        )}
+        <Link href="https://press.lewoof.xyz" target="_blank">
+          <Button variant="link" className="cursor-pointer">
+            {"Libri Latini"}
+          </Button>
+        </Link>
         <div className="flex item-center">
           <Input
             className="border-stone-400 shadow-none rounded-r-none border-r-0"

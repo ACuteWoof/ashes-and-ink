@@ -11,19 +11,24 @@ type book = {
     height: number;
     width: number;
   };
+  id: string;
 };
 
-const books: book[] = new Array(50).fill({
-  image: "/crime-and-punishment.png",
-  title: "Crime and Punishment",
-  author: "Fyodor Dostoevsky",
-  description:
-    "Crime and Punishment, novel by Russian writer Fyodor Dostoyevsky, first published in 1866. His first masterpiece, the novel is a psychological analysis of the poor former student Raskolnikov, whose theory that he is an extraordinary person able to take on the spiritual responsibility of using evil means to achieve humanitarian ends leads him to murder. The act produces nightmarish guilt in Raskolnikov. The story is one of the finest studies of the psychopathology of guilt written in any language.",
-  cover: {
-    height: 8,
-    width: 5,
+const books: book[] = [
+  {
+    image: "/white-nights-notes-from-underground.png",
+    title: "White Nights & Notes from Underground",
+    author: "Fyodor Dostoevsky",
+    description: `This is a compilation of what are two of the perhaps greatest and most well-known short stories of Fyodor Dostoevsky, exploring views of life in 19th century Petersburg. In his own words in the author’s note to Notes from Underground:
+
+“I have tried to expose to the view of the public more distinctly than is commonly done, one of the characters of the recent past. He is one of the representatives of a generation still living.”`,
+    cover: {
+      height: 8,
+      width: 5,
+    },
+    id: "gjyd6pv",
   },
-});
+];
 
 export default function HomeBooks() {
   return (
@@ -47,15 +52,17 @@ export default function HomeBooks() {
             />
           ))}
       </div>
-      <div className="h-[20vh] bg-gradient-to-b from-transparent via-stone-50 to-stone-50 absolute bottom-0 left-0 right-0 flex flex-col justify-center items-center">
-        <Button
-          variant="outline"
-          className="bg-stone-700 text-stone-100"
-          size="lg"
-        >
-          Browse All Books
-        </Button>
-      </div>
+      {books.length > 5 && (
+        <div className="h-[20vh] bg-gradient-to-b from-transparent via-stone-50 to-stone-50 absolute bottom-0 left-0 right-0 flex flex-col justify-center items-center">
+          <Button
+            variant="outline"
+            className="bg-stone-700 text-stone-100"
+            size="lg"
+          >
+            Browse All Books
+          </Button>
+        </div>
+      )}
     </div>
   );
 }
@@ -76,7 +83,7 @@ function Book({
   coverheight: number;
 }) {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col hover:cursor-pointer hover:*:bg-stone-950">
       <Image
         src={image}
         alt={`${title} - ${author}`}

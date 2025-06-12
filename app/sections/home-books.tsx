@@ -1,34 +1,8 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { caligraphy } from "../fonts";
-
-type book = {
-  image: string;
-  title: string;
-  author: string;
-  description: string;
-  cover: {
-    height: number;
-    width: number;
-  };
-  id: string;
-};
-
-const books: book[] = [
-  {
-    image: "/white-nights-notes-from-underground.png",
-    title: "White Nights & Notes from Underground",
-    author: "Fyodor Dostoevsky",
-    description: `This is a compilation of what are two of the perhaps greatest and most well-known short stories of Fyodor Dostoevsky, exploring views of life in 19th century Petersburg. In his own words in the author’s note to Notes from Underground:
-
-“I have tried to expose to the view of the public more distinctly than is commonly done, one of the characters of the recent past. He is one of the representatives of a generation still living.”`,
-    cover: {
-      height: 8,
-      width: 5,
-    },
-    id: "gjyd6pv",
-  },
-];
+import Link from "next/link";
+import { books } from "../books";
 
 export default function HomeBooks() {
   return (
@@ -40,15 +14,17 @@ export default function HomeBooks() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {books &&
-          books.map((book, i) => (
+          books.map((book) => (
             <Book
-              key={i}
+              key={book.id}
               image={book.image}
               title={book.title}
               author={book.author}
               description={book.description}
               coverwidth={book.cover.width * 1000}
               coverheight={book.cover.height * 1000}
+              price={book.price}
+              id={book.id}
             />
           ))}
       </div>
@@ -74,6 +50,8 @@ function Book({
   description,
   coverwidth,
   coverheight,
+  price,
+  id,
 }: {
   image: string;
   title: string;
@@ -81,23 +59,31 @@ function Book({
   description: string;
   coverwidth: number;
   coverheight: number;
+  price: number;
+  id: string;
 }) {
   return (
-    <div className="flex flex-col hover:cursor-pointer hover:*:bg-stone-950">
-      <Image
-        src={image}
-        alt={`${title} - ${author}`}
-        width={coverwidth}
-        height={coverheight}
-      />
-      <div className="p-4 bg-stone-800 w-full">
-        <div className="prose prose-stone prose-invert">
-          <h4>
-            {title} - {author}
-          </h4>
-          <p className="line-clamp-3">{description}</p>
+    <Link href={"/books/" + id}>
+      <div className="flex flex-col hover:cursor-pointer bg-stone-800 p-4 gap-4 hover:bg-stone-800/90">
+        <Image
+          src={image}
+          alt={`${title} - ${author}`}
+          width={coverwidth}
+          height={coverheight}
+        />
+        <div className="w-full">
+          <div className="prose prose-stone prose-invert">
+            <h4>
+              {title} - {author}
+            </h4>
+            <p className="line-clamp-4">
+              <strong>{price} USD</strong>
+              <br />
+              {description}
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

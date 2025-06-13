@@ -3,11 +3,18 @@
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { caligraphy } from "../fonts";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { sendWebhook } from "../actions";
 
 export default function Contact() {
   const [message, setMessage] = useState<string>("");
+  const [buttonText, setButtonText] = useState<string>("Send Message");
+
+  useEffect(() => {
+    if (message.length > 0) {
+      setButtonText("Send Message");
+    }
+  }, [message]);
 
   return (
     <div className="flex flex-col gap-4">
@@ -21,11 +28,14 @@ export default function Contact() {
       <div>
         <Button
           onClick={async () => {
-            await sendWebhook(message);
             setMessage("");
+            setButtonText("Sending...");
+            await sendWebhook(message);
+            setButtonText("Message Sent.");
           }}
+          disabled={message.length === 0 || buttonText !== "Send Message"}
         >
-          Send Message
+          {buttonText}
         </Button>
       </div>
     </div>

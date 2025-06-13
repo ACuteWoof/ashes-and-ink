@@ -7,7 +7,7 @@ import { useState } from "react";
 import { sendWebhook } from "../actions";
 
 export default function Contact() {
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState<string>("");
 
   return (
     <div className="flex flex-col gap-4">
@@ -19,7 +19,12 @@ export default function Contact() {
         maxLength={2000}
       />
       <div>
-        <Button onClick={async () => await sendWebhook(message)}>
+        <Button
+          onClick={async () => {
+            await sendWebhook(message);
+            setMessage("");
+          }}
+        >
           Send Message
         </Button>
       </div>

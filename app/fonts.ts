@@ -1,5 +1,5 @@
 import {
-    Cormorant_SC,
+  Cormorant_SC,
   Cormorant_Upright,
   IBM_Plex_Serif,
   Parisienne,

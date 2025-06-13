@@ -10,7 +10,12 @@ export default async function Home() {
       <Header page={0} />
       <div className="lg:h-[calc(100vh-var(--spacing)*16)] flex flex-col gap-4 lg:grid lg:grid-cols-3 p-8 lg:p-0 lg:pt-12 lg:pl-12 bg-white">
         <div className="flex flex-col gap-8 justify-between pb-12">
-          <h1 className={"text-[20vw] lg:text-[20vh] leading-[20vw] lg:leading-[20vh] " + caligraphy.className}>
+          <h1
+            className={
+              "text-[20vw] lg:text-[20vh] leading-[20vw] lg:leading-[20vh] " +
+              caligraphy.className
+            }
+          >
             {"Ashes & Ink"}
           </h1>
           <p className="hidden lg:block text-[2vh]">

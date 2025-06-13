@@ -1,13 +1,14 @@
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
 import { caligraphy } from "../fonts";
+import Contact from "./contact";
 
 export default function Footer() {
   return (
     <footer className="p-8 flex flex-col items-center bg-stone-100">
       <div className="flex flex-col items-center justify-center py-12">
         <div className="border-y-2 border-y-stone-950 md:min-w-md text-center w-fit py-8 px-12">
-          <h1 className={"text-3xl " + caligraphy.className}>{"About Ashes & Ink"}</h1>
+          <h1 className={"text-3xl " + caligraphy.className}>
+            {"About Ashes & Ink"}
+          </h1>
         </div>
       </div>
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -33,13 +34,7 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-4">
-          <h2 className={"text-2xl " + caligraphy.className}>{"Contact Us"}</h2>
-          <Textarea className="border border-stone-400 grow" />
-          <div>
-            <Button>Send Message</Button>
-          </div>
-        </div>
+        <Contact />
       </div>
     </footer>
   );

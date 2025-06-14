@@ -65,7 +65,7 @@ export default async function Page({
   return (
     <main className="bg-white min-h-screen flex flex-col gap-0 overflow-hidden">
       <Header page={2} />
-      <div className="p-12 pr-0 grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div className="p-12 lg:pr-0 grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="flex justify-center">
           <div className="prose prose-stone h-full w-full">
             <h1 className="lg:text-5xl">
@@ -182,7 +182,7 @@ function BookStack({
           className={`z-0 min-h-[80vh] h-[80vh] max-h-[80vh] w-auto object-contain antialiased aspect-[${coverheight}/${coverwidth}]`}
         />
       </div>
-      <div className="flex gap-1">
+      <div className="hidden md:flex gap-1">
         {spines &&
           spines.map((spine, i) => (
             <Image

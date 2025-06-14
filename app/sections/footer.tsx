@@ -23,9 +23,9 @@ export default function Footer() {
             <h2 className={caligraphy.className}>You Can Request a Book!</h2>
             <p>
               If a book that you would love to have is not available in our
-              store, you can request it to be made by us for you (as long as the
+              store, you can request it to be made by us for you as long as the
               content you want in the book is under the public domain in the US,
-              UK and the EU).
+              UK, and the EU.
             </p>
             <p>
               If you want a book to be made for you alone and do not want it to

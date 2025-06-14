@@ -82,4 +82,32 @@ export const books: Book[] = [
       },
     ],
   },
+  {
+    image: "/around-the-world-in-eighty-days.png",
+    title: "Around The World In Eighty Days",
+    author: "Jules Verne",
+    description: `Set in the 19th century, the novel follows a very calculated and punctual man, Phileas Fogg, who, after a bet made with his companions at the Reform Club, is taken by the mission to go around the world in exactly eighty days. Mr. Fogg then breaks the routine of his daily life which was so precious to him, and sets off to Dover with his valet, Passepartout. Together they pass through all sorts of lands and peoples, racing against the clock, until they finally return again to the club.`,
+    cover: {
+      height: 8,
+      width: 5,
+    },
+    id: "845jw4k",
+    price: 13.58,
+    copyright:
+      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+    contributors:
+      "By: Jules Verne, Translated by: George Makepeace Towle, Compiled by: Vithushan Sutharsan",
+    category: "Fiction",
+    language: "English",
+    pages: 240,
+    binding: "Paperback Perfect Bound",
+    dimensions: "Novella (5 x 8 in / 127 x 203 mm)",
+    explicit: false,
+    buyLinks: [
+      {
+        from: "Lulu",
+        link: "https://www.lulu.com/shop/jules-verne-and-george-makepeace-towle-and-vithushan-sutharsan/around-the-world-in-eighty-days/paperback/product-845jw4k.html",
+      },
+    ],
+  },
 ];

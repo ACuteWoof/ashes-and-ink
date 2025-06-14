@@ -65,12 +65,16 @@ function Book({
   return (
     <Link href={"/books/" + id}>
       <div className="flex flex-col hover:cursor-pointer bg-stone-800 p-4 gap-4 hover:bg-stone-800/90">
-        <Image
-          src={image}
-          alt={`${title} - ${author}`}
-          width={coverwidth}
-          height={coverheight}
-        />
+        <div className="border border-stone-200/10 shadow-md shadow-black relative">
+          <div className="absolute z-50 border-r border-stone-200/20 w-[5%] h-full left-0" />
+          <Image
+            src={image}
+            alt={`${title} - ${author}`}
+            width={coverwidth}
+            height={coverheight}
+	    className="z-0"
+          />
+        </div>
         <div className="w-full">
           <div className="prose prose-stone prose-invert">
             <h4>

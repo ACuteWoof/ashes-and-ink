@@ -10,7 +10,8 @@ export default function HeroBooks() {
       {/*   height={8000} */}
       {/* /> */}
       <div className="flex gap-0.5 lg:gap-1">
-        <div className='h-[80vw] w-[50vw] lg:h-[80vh] lg:w-[50vh] bg-stone-800 bg-[url("/white-nights-notes-from-underground.png")] bg-contain flex'>
+        <div className='h-[80vw] w-[50vw] lg:h-[80vh] lg:w-[50vh] bg-stone-800 bg-[url("/white-nights-notes-from-underground.png")] bg-contain flex relative border border-stone-200/20 shadow-md shadow-black'>
+          <div className="absolute z-50 border-r border-stone-200/20 w-[5%] h-full left-0" />
           {/* <div className="h-[80vw] w-[50vw] lg:h-[80vh] lg:w-[50vh] bg-stone-800/50 backdrop-grayscale-100 bg-contain flex flex-col-reverse opacity-0 hover:opacity-100 transition-all duration-150"> */}
           {/*   <div className="p-4 bg-stone-800 prose prose-stone prose-invert"> */}
           {/*     <h4>{"Ashes & Ink Dostoevsky Collection"}</h4> */}

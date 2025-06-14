@@ -138,11 +138,11 @@ function BookStack({
   return (
     <div
       className={
-        "h-full max-h-screen flex gap-1 w-full overflow-hidden " + className
+        "h-full max-h-screen flex gap-1 w-max overflow-scroll flex-nowrap " + className
       }
     >
       <div
-        className={`h-[80vh] bg-stone-300 bg-contain flex border border-stone-200/20 shadow-md shadow-black relative aspect-[${coverheight}/${coverwidth}]`}
+        className={`h-[80vh] w-[${widthvh}vh] bg-contain flex relative aspect-[${coverheight}/${coverwidth}]`}
       >
         <div className="absolute z-50 border-r border-stone-200/20 w-[5%] h-[80vh] left-0" />
         <Image
@@ -150,7 +150,7 @@ function BookStack({
           alt={`${title} - ${author}`}
           width={coverwidth * 600}
           height={coverheight * 600}
-          className={`z-0 h-[80vh] max-h-[80vh] w-full max-w-[${widthvh}vh] object-fit antialiased aspect-[${coverheight}/${coverwidth}]`}
+          className={`z-0 min-h-[80vh] h-[80vh] max-h-[80vh] w-auto object-contain antialiased aspect-[${coverheight}/${coverwidth}]`}
         />
       </div>
       <div className="flex gap-1">
@@ -162,7 +162,7 @@ function BookStack({
               alt={`${title} - ${author}`}
               height={coverheight * 600}
               width={(spine[1] as number) * 600}
-              className={`z-0 h-[80vh] max-h-[${(80 * spine[1]) / coverheight}vh] w-auto object-contain antialiased aspect-[${coverheight}/${spine[1]}]`}
+              className={`z-0 min-h-[80vh] h-[80vh] max-h-[${(80 * spine[1]) / coverheight}vh] w-auto object-contain antialiased aspect-[${coverheight}/${spine[1]}]`}
             />
           ))}
       </div>

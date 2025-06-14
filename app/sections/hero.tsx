@@ -8,27 +8,26 @@ export default function HeroBooks({ books }: { books: Book[] }) {
   const [book, setBook] = useState(books[0]);
 
   return (
-    <div className={"h-full max-h-screen flex gap-1 w-full overflow-hidden"}>
-      <div
-        className={`h-[80vh] bg-stone-300 bg-contain flex border border-stone-200/20 shadow-md shadow-black relative aspect-[${book.cover.height}/${book.cover.width}]`}
+    <div className={"h-full max-h-screen flex gap-1 w-max overflow-hidden"}>
+      <motion.div
+        className={`h-[80vh] bg-contain flex relative aspect-[${book.cover.height}/${book.cover.width}]`}
+        initial={{ x: 100 }}
+        animate={{ x: 0 }}
+        exit={{ x: -100 }}
+        transition={{ duration: 0.3 }}
+        key={book.id}
       >
         <div className="absolute z-50 border-r border-stone-200/20 w-[5%] h-[80vh] left-0" />
-        <motion.div
-          initial={{ x: 100 }}
-          animate={{ x: 0 }}
-          exit={{ x: -100 }}
-          transition={{ duration: 0.3 }}
-          key={book.id}
-        >
+        <div>
           <Image
             src={book.image}
             alt={`${book.title} - ${book.author}`}
             width={book.cover.width * 600}
             height={book.cover.height * 600}
-            className={`z-0 h-full max-h-[80vh] w-full max-w-[${(80 * book.cover.width) / book.cover.height}vh] object-contain antialiased aspect-[${book.cover.height}/${book.cover.width}]`}
+            className={`z-0 h-full max-h-[80vh] w-auto max-w-[${(80 * book.cover.width) / book.cover.height}vh] object-contain antialiased aspect-[${book.cover.height}/${book.cover.width}]`}
           />
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
       <div className="flex gap-1">
         {books &&
           books.map((book, i) => (

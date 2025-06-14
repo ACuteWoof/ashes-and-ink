@@ -15,13 +15,7 @@ export async function generateMetadata({
 }) {
   const { id }: { id: string } = await params;
   const book = books[id];
-  const {
-    image,
-    title,
-    author,
-    description,
-    cover,
-  } = book;
+  const { image, title, author, description, cover } = book;
 
   return {
     title: `${title} - ${author}`,
@@ -68,6 +62,13 @@ export default async function Page({
       <div className="p-12 lg:pr-0 grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="flex justify-center">
           <div className="prose prose-stone h-full w-full">
+            <Image
+              src={image}
+              alt={`${title} - ${author}`}
+              width={cover.width * 600}
+              height={cover.height * 600}
+              className={`object-contain md:hidden`}
+            />
             <h1 className="lg:text-5xl">
               <span className={caligraphy.className}>{title}</span>
               <br />
@@ -166,12 +167,11 @@ function BookStack({
   return (
     <div
       className={
-        "h-full max-h-screen flex gap-1 w-max overflow-scroll flex-nowrap " +
-        className
+        "h-full max-h-screen flex gap-1 w-max flex-nowrap " + className
       }
     >
       <div
-        className={`h-[80vh] w-[${widthvh}vh] bg-contain flex relative aspect-[${coverheight}/${coverwidth}]`}
+        className={`hidden h-[80vh] w-[${widthvh}vh] bg-contain md:flex relative aspect-[${coverheight}/${coverwidth}]`}
       >
         <div className="absolute z-50 border-r border-stone-200/20 w-[5%] h-[80vh] left-0" />
         <Image

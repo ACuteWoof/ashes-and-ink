@@ -4,6 +4,7 @@ import HomeBooks from "./sections/home-books";
 import Footer from "./sections/footer";
 import { caligraphy } from "./fonts";
 import { books } from "./books";
+import Image from "next/image";
 
 export default async function Home() {
   const shuffledBooks = Object.values(books)
@@ -11,11 +12,14 @@ export default async function Home() {
     .sort((a, b) => a.sort - b.sort)
     .map(({ value }) => value);
 
+  const { image, title, author, cover } = shuffledBooks[0];
+
   return (
     <main className="bg-white min-h-screen flex flex-col gap-0">
       <Header page={0} />
       <div className="lg:-[calc(100vh-var(--spacing)*16)] flex flex-col gap-4 lg:grid lg:grid-cols-2 p-8 lg:p-0 lg:py-12 lg:pl-12 bg-white">
         <div className="flex flex-col gap-8 justify-between pb-12">
+
           <h1
             className={
               "text-[20vw] lg:text-[20vh] leading-[20vw] lg:leading-[20vh] " +
@@ -24,12 +28,19 @@ export default async function Home() {
           >
             {"Ashes & Ink"}
           </h1>
-          <p className="hidden lg:block text-[2vh] w-full max-w-96">
+          <p className="text-[2vh] w-full max-w-96">
             Bringing classic books back in style to a people of the modern
             Fahrenheit 451 dystopia.
           </p>
+          <Image
+            src={image}
+            alt={`${title} - ${author}`}
+            width={cover.width * 600}
+            height={cover.height * 600}
+            className={`object-contain md:hidden`}
+          />
         </div>
-        <div className="flex flex-col px-12 items-center justify-center w-full">
+        <div className="hidden md:flex flex-col px-12 items-center justify-center w-full">
           <HeroBooks books={shuffledBooks} />
         </div>
       </div>

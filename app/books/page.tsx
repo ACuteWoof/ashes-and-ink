@@ -7,7 +7,6 @@ import { Book, books as defaultBooks } from "../books";
 import { BookCard } from "../sections/home-books";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { FaSearch } from "react-icons/fa";
 import { useState } from "react";
 
 export default function Page() {
@@ -23,7 +22,6 @@ export default function Page() {
           <div className="w-full max-w-screen-sm">
             <div className="hidden md:flex item-center">
               <Input
-                className="border-stone-400 shadow-none rounded-r-none border-r-0"
                 placeholder="Search..."
                 onChange={(e) => {
                   setSearchTerm(e.target.value);
@@ -37,23 +35,6 @@ export default function Page() {
                 }}
                 value={searchTerm}
               />
-              <Button
-                variant="outline"
-                className="cursor-pointer !bg-transparent shadow-none !border-stone-400 rounded-l-none disabled:hover:bg-transparent hover:!bg-stone-300"
-                disabled={searchTerm.length === 0}
-                onClick={() => {
-                  setBooks(
-                    Object.values(defaultBooks).filter((thebook) =>
-                      JSON.stringify(thebook)
-                        .toLowerCase()
-                        .includes(searchTerm.toLowerCase()),
-                    ),
-                  );
-                }}
-              >
-                Search
-                <FaSearch />
-              </Button>
             </div>
           </div>
         </div>

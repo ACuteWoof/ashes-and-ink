@@ -70,7 +70,7 @@ export const books: { [key: string]: Book } = {
     ],
   },
   "845yvg2": {
-    image: "/crime-and-punishment.png",
+    image: "/crime-and-punishment/front.png",
     coverparts: {
       front: "/crime-and-punishment/front.png",
       back: "/crime-and-punishment/back.png",

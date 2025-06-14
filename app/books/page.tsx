@@ -20,7 +20,6 @@ export default function Page() {
         <div className="flex justify-between items-center mb-12">
           <h1 className={"text-5xl " + caligraphy.className}>Browse Books</h1>
           <div className="w-full max-w-screen-sm">
-            <div className="hidden md:flex item-center">
               <Input
                 placeholder="Search..."
                 onChange={(e) => {
@@ -35,7 +34,6 @@ export default function Page() {
                 }}
                 value={searchTerm}
               />
-            </div>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8">

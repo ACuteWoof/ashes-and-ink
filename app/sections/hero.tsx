@@ -31,7 +31,7 @@ export default function HeroBooks({ books }: { books: Book[] }) {
           </div>
         </motion.div>
       </Link>
-      <div className="flex gap-1">
+      <div className="hidden lg:flex gap-1">
         {books &&
           books.map((book, i) => (
             <Link href={`/books/${book.id}`} key={i}>

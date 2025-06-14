@@ -105,7 +105,7 @@ export const books: { [key: string]: Book } = {
     ],
   },
   "845jw4k": {
-    image: "/around-the-world-in-eighty-days.png",
+    image: "/around-the-world-in-eighty-days/front.png",
     coverparts: {
       front: "/around-the-world-in-eighty-days/front.png",
       back: "/around-the-world-in-eighty-days/back.png",

@@ -21,7 +21,6 @@ export default function HeroBooks({ books }: { books: Book[] }) {
           key={book.id}
         >
           <Image
-            unoptimized={true}
             src={book.image}
             alt={`${book.title} - ${book.author}`}
             width={book.cover.width * 600}
@@ -35,7 +34,6 @@ export default function HeroBooks({ books }: { books: Book[] }) {
           books.map((book, i) => (
             <Image
               key={i}
-              unoptimized={true}
               src={book.coverparts.spine}
               alt={`${book.title} - ${book.author}`}
               height={book.cover.height * 600}

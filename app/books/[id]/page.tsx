@@ -146,7 +146,6 @@ function BookStack({
       >
         <div className="absolute z-50 border-r border-stone-200/20 w-[5%] h-[80vh] left-0" />
         <Image
-          unoptimized={true}
           src={image}
           alt={`${title} - ${author}`}
           width={coverwidth * 600}
@@ -159,7 +158,6 @@ function BookStack({
           spines.map((spine, i) => (
             <Image
               key={i}
-              unoptimized={true}
               src={spine[0]}
               alt={`${title} - ${author}`}
               height={coverheight * 600}

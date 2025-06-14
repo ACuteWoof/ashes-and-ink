@@ -68,6 +68,7 @@ export function BookCard({
         <div className="border border-stone-200/10 relative">
           <div className="absolute z-50 border-r border-stone-200/20 w-[5%] h-full left-0" />
           <Image
+            unoptimized={true}
             src={image}
             alt={`${title} - ${author}`}
             width={coverwidth}

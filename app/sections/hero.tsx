@@ -17,10 +17,11 @@ export default function HeroBooks({ books }: { books: Book[] }) {
           initial={{ x: 100 }}
           animate={{ x: 0 }}
           exit={{ x: -100 }}
-	  transition={{duration: 0.3}}
+          transition={{ duration: 0.3 }}
           key={book.id}
         >
           <Image
+            unoptimized={true}
             src={book.image}
             alt={`${book.title} - ${book.author}`}
             width={book.cover.width * 600}
@@ -34,6 +35,7 @@ export default function HeroBooks({ books }: { books: Book[] }) {
           books.map((book, i) => (
             <Image
               key={i}
+              unoptimized={true}
               src={book.coverparts.spine}
               alt={`${book.title} - ${book.author}`}
               height={book.cover.height * 600}

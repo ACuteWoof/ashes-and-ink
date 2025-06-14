@@ -30,7 +30,7 @@ export default async function Home() {
           </p>
         </div>
         <div className="flex flex-col px-12 items-center justify-center">
-          <HeroBooks books={shuffledBooks}/>
+          <HeroBooks books={shuffledBooks} />
         </div>
       </div>
       <HomeBooks />

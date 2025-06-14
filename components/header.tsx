@@ -15,6 +15,7 @@ export default function Header({ page }: { page?: number }) {
     <header className="w-full flex items-center h-16 px-8 py-4 justify-between gap-8">
       <Link className="flex gap-4 items-center" href="/" target="_self">
         <Image
+          unoptimized={true}
           src="/header-icon.png"
           width={500}
           height={500}

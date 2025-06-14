@@ -150,7 +150,7 @@ function BookStack({
           alt={`${title} - ${author}`}
           width={coverwidth * 600}
           height={coverheight * 600}
-          className={`z-0 h-[80vh] max-h-[80vh] max-w-[${widthvh}vh] object-fit antialiased aspect-[${coverheight}/${coverwidth}]`}
+          className={`z-0 h-[80vh] max-h-[80vh] w-full max-w-[${widthvh}vh] object-fit antialiased aspect-[${coverheight}/${coverwidth}]`}
         />
       </div>
       <div className="flex gap-1">

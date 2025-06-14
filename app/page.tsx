@@ -14,7 +14,7 @@ export default async function Home() {
   return (
     <main className="bg-white min-h-screen flex flex-col gap-0">
       <Header page={0} />
-      <div className="lg:-[calc(100vh-var(--spacing)*16)] flex flex-col gap-4 lg:grid lg:grid-cols-2 p-8 lg:p-0 lg:py-12 lg:pl-12 bg-white">
+      <div className="lg:-[calc(100vh-var(--spacing)*16)] flex flex-col gap-4 lg:flex-row p-8 lg:p-0 lg:py-12 lg:pl-12 bg-white">
         <div className="flex flex-col gap-8 justify-between pb-12">
           <h1
             className={
@@ -29,7 +29,7 @@ export default async function Home() {
             Fahrenheit 451 dystopia.
           </p>
         </div>
-        <div className="flex flex-col px-12 items-center justify-center">
+        <div className="flex flex-col px-12 items-center justify-center w-full">
           <HeroBooks books={shuffledBooks} />
         </div>
       </div>

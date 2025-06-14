@@ -25,7 +25,7 @@ export default function HeroBooks({ books }: { books: Book[] }) {
             alt={`${book.title} - ${book.author}`}
             width={book.cover.width * 600}
             height={book.cover.height * 600}
-            className={`z-0 h-[80vh] max-h-[80vh] max-w-[${(80 * book.cover.width) / book.cover.height}vh] object-fit antialiased aspect-[${book.cover.height}/${book.cover.width}]`}
+            className={`z-0 h-full max-h-[80vh] w-full max-w-[${(80 * book.cover.width) / book.cover.height}vh] object-contain antialiased aspect-[${book.cover.height}/${book.cover.width}]`}
           />
         </motion.div>
       </div>

@@ -4,8 +4,36 @@ import Footer from "@/app/sections/footer";
 import HomeBooks from "@/app/sections/home-books";
 import Header from "@/components/header";
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id }: { id: string } = await params;
+  const book = books[id];
+  const {
+    image,
+    title,
+    author,
+    description,
+    cover,
+  } = book;
+
+  return {
+    title,
+    description,
+    authors: [{ name: author }],
+    openGraph: {
+      images: [
+        { url: image, width: cover.width * 600, height: cover.height * 600 },
+      ],
+    },
+  };
+}
 
 export default async function Page({
   params,
@@ -138,7 +166,8 @@ function BookStack({
   return (
     <div
       className={
-        "h-full max-h-screen flex gap-1 w-max overflow-scroll flex-nowrap " + className
+        "h-full max-h-screen flex gap-1 w-max overflow-scroll flex-nowrap " +
+        className
       }
     >
       <div

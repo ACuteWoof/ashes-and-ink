@@ -117,7 +117,7 @@ export default async function Page({
   );
 }
 
-export function BookStack({
+function BookStack({
   image,
   title,
   author,

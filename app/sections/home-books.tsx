@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { caligraphy } from "../fonts";
 import Link from "next/link";
-import { books } from "../books";
+import { Book, books } from "../books";
 
 export default function HomeBooks() {
   return (
@@ -14,21 +14,21 @@ export default function HomeBooks() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {books &&
-          books.map((book) => (
-            <Book
+          (Object.values(books) as Book[]).map((book) => (
+            <BookCard
               key={book.id}
               image={book.image}
               title={book.title}
               author={book.author}
               description={book.description}
-              coverwidth={book.cover.width * 1000}
-              coverheight={book.cover.height * 1000}
+              coverwidth={book.cover.width * 600}
+              coverheight={book.cover.height * 600}
               price={book.price}
               id={book.id}
             />
           ))}
       </div>
-      {books.length > 5 && (
+      {Object.values(books).length > 5 && (
         <div className="h-[20vh] bg-gradient-to-b from-transparent via-stone-50 to-stone-50 absolute bottom-0 left-0 right-0 flex flex-col justify-center items-center">
           <Button
             variant="outline"
@@ -43,7 +43,7 @@ export default function HomeBooks() {
   );
 }
 
-function Book({
+export function BookCard({
   image,
   title,
   author,
@@ -65,19 +65,19 @@ function Book({
   return (
     <Link href={"/books/" + id}>
       <div className="flex flex-col hover:cursor-pointer bg-stone-800 p-4 gap-4 hover:bg-stone-800/90">
-        <div className="border border-stone-200/10 shadow-md shadow-black relative">
+        <div className="border border-stone-200/10 relative">
           <div className="absolute z-50 border-r border-stone-200/20 w-[5%] h-full left-0" />
           <Image
             src={image}
             alt={`${title} - ${author}`}
             width={coverwidth}
             height={coverheight}
-	    className="z-0"
+            className="z-0 w-auto"
           />
         </div>
         <div className="w-full">
           <div className="prose prose-stone prose-invert">
-            <h4>
+            <h4 className="truncate">
               {title} - {author}
             </h4>
             <p className="line-clamp-4">

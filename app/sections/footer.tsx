@@ -1,9 +1,10 @@
+import Link from "next/link";
 import { caligraphy } from "../fonts";
 import Contact from "./contact";
 
 export default function Footer() {
   return (
-    <footer className="p-8 flex flex-col items-center bg-stone-100">
+    <footer className="p-8 pb-12 flex flex-col items-center bg-stone-100">
       <div className="flex flex-col items-center justify-center py-12">
         <div className="border-y-2 border-y-stone-950 md:min-w-md text-center w-fit py-8 px-12">
           <h1 className={"text-3xl " + caligraphy.className}>
@@ -11,7 +12,7 @@ export default function Footer() {
           </h1>
         </div>
       </div>
-      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="w-full columns-1 lg:columns-2 xl:columns-2 gap-8">
         <div className="flex flex-col items-center">
           <div className="prose prose-stone text-justify">
             <h2 className={caligraphy.className}>What We Do</h2>
@@ -20,13 +21,7 @@ export default function Footer() {
               paperback or hardback books that are printed on demand when you
               place an order meaning we <b>never</b> run out of stock.
             </p>
-            <h2 className={caligraphy.className}>You Can Request a Book!</h2>
-            <p>
-              If a book that you would love to have is not available in our
-              store, you can request it to be made by us for you as long as the
-              content you want in the book is under the public domain in the US,
-              UK, and the EU.
-            </p>
+
             <p>
               If you want a book to be made for you alone and do not want it to
               be published on our site, the content can be anything that you
@@ -45,6 +40,9 @@ export default function Footer() {
               run by the same person. There are however plans for the future to
               merge the content of that store with {"Ashes & Ink"}.
             </p>
+            <Link href="https://press.lewoof.xyz" target="_blank">
+              Click here to visit.
+            </Link>
             <h2 className={caligraphy.className}>Copyright</h2>
             <p>
               The content (the ASCII text alone) by themselves are not protected
@@ -57,9 +55,35 @@ export default function Footer() {
               the title-verso page to identify the copyright information for the
               book in question.
             </p>
+            <h2 className={caligraphy.className}>You Can Request a Book!</h2>
+            <p>
+              If a book that you would love to have is not available in our
+              store, you can request it to be made by us for you as long as the
+              content you want in the book is under the public domain in the US,
+              UK, and the EU.
+            </p>
+            <h2 className={"text-2xl " + caligraphy.className}>
+              {"Contact Us"}
+            </h2>
+            <div>
+              You can send us a message through the textbox below either for
+              requesting books to be made or support in general. We are also on
+              the following social media platforms:
+              <ul>
+                <Link href="https://discord.gg/ngp9hJPjt9">
+                  <li>Discord</li>{" "}
+                </Link>
+                <Link href="https://instagram.com/ashesandink.classics">
+                  <li>Instagram</li>{" "}
+                </Link>
+              </ul>
+            </div>
+            <h3 className={"text-2xl " + caligraphy.className}>
+              {"Send Anonymous Message"}
+            </h3>
+            <Contact />
           </div>
         </div>
-        <Contact />
       </div>
     </footer>
   );

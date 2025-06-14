@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sans.className} antialiased`}>{children}</body>
+      <body className={`${sans.className} antialiased scroll-smooth`}>{children}</body>
     </html>
   );
 }

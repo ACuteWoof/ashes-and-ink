@@ -1,61 +1,49 @@
-// import { Button } from "@/components/ui/button";
+"use client";
+import Image from "next/image";
+import { Book } from "../books";
+import { useState } from "react";
+import { motion } from "motion/react";
 
-export default function HeroBooks() {
+export default function HeroBooks({ books }: { books: Book[] }) {
+  const [book, setBook] = useState(books[0]);
+
   return (
-    <div>
-      {/* <Image */}
-      {/*   src="/white-nights-notes-from-underground.png" */}
-      {/*   alt="White Nights & Notes From Underground - Fyodor Dostoevsky, Constance Garnett" */}
-      {/*   width={5000} */}
-      {/*   height={8000} */}
-      {/* /> */}
-      <div className="flex gap-0.5 lg:gap-1">
-        <div className='h-[80vw] w-[50vw] lg:h-[80vh] lg:w-[50vh] bg-stone-800 bg-[url("/white-nights-notes-from-underground.png")] bg-contain flex relative border border-stone-200/20 shadow-md shadow-black'>
-          <div className="absolute z-50 border-r border-stone-200/20 w-[5%] h-full left-0" />
-          {/* <div className="h-[80vw] w-[50vw] lg:h-[80vh] lg:w-[50vh] bg-stone-800/50 backdrop-grayscale-100 bg-contain flex flex-col-reverse opacity-0 hover:opacity-100 transition-all duration-150"> */}
-          {/*   <div className="p-4 bg-stone-800 prose prose-stone prose-invert"> */}
-          {/*     <h4>{"Ashes & Ink Dostoevsky Collection"}</h4> */}
-          {/*     <p> */}
-          {/*       View the {"Ashes & Ink"} collection of Dostoevsky's most popular */}
-          {/*       books. */}
-          {/*     </p> */}
-          {/*     <Button variant="outline">Browse Collection</Button> */}
-          {/*   </div> */}
-          {/* </div> */}
-        </div>
-        <div className="h-[80vw] w-[10vw] lg:h-[80vh] lg:w-[10vh] bg-stone-900 flex flex-col justify-around border-4 border-stone-500">
-          <div className="border-y-2 border-y-stone-500" />
-          <div />
-          <div />
-          <div />
-          <div />
-          <div />
-          <div className="border-y-2 border-y-stone-500" />
-          <div className="border-y-2 border-y-stone-500" />
-          <div className="border-y-2 border-y-stone-500" />
-        </div>
-        <div className="h-[80vw] w-[10vw] lg:h-[80vh] lg:w-[10vh] rotate-4 bg-stone-900 mx-2 lg:mx-5 flex flex-col justify-around border-4 border-stone-500">
-          <div className="border-y-2 border-y-stone-500" />
-          <div />
-          <div />
-          <div />
-          <div />
-          <div />
-          <div className="border-y-2 border-y-stone-500" />
-          <div className="border-y-2 border-y-stone-500" />
-          <div className="border-y-2 border-y-stone-500" />
-        </div>
-        <div className="h-[80vw] w-[10vw] lg:h-[80vh] lg:w-[10vh] bg-stone-900 flex flex-col justify-around border-4 border-stone-500">
-          <div className="border-y-2 border-y-stone-500" />
-          <div />
-          <div />
-          <div />
-          <div />
-          <div />
-          <div className="border-y-2 border-y-stone-500" />
-          <div className="border-y-2 border-y-stone-500" />
-          <div className="border-y-2 border-y-stone-500" />
-        </div>
+    <div className={"h-full max-h-screen flex gap-1 w-full overflow-hidden"}>
+      <div
+        className={`h-[80vh] bg-stone-300 bg-contain flex border border-stone-200/20 shadow-md shadow-black relative aspect-[${book.cover.height}/${book.cover.width}]`}
+      >
+        <div className="absolute z-50 border-r border-stone-200/20 w-[5%] h-[80vh] left-0" />
+        <motion.div
+          initial={{ x: 100 }}
+          animate={{ x: 0 }}
+          exit={{ x: -100 }}
+	  transition={{duration: 0.3}}
+          key={book.id}
+        >
+          <Image
+            src={book.image}
+            alt={`${book.title} - ${book.author}`}
+            width={book.cover.width * 600}
+            height={book.cover.height * 600}
+            className={`z-0 h-[80vh] max-h-[80vh] max-w-[${(80 * book.cover.width) / book.cover.height}vh] object-fit antialiased aspect-[${book.cover.height}/${book.cover.width}]`}
+          />
+        </motion.div>
+      </div>
+      <div className="flex gap-1">
+        {books &&
+          books.map((book, i) => (
+            <Image
+              key={i}
+              src={book.coverparts.spine}
+              alt={`${book.title} - ${book.author}`}
+              height={book.cover.height * 600}
+              width={(book.cover.spine as number) * 600}
+              className={`z-0 h-[80vh] max-h-[${(80 * book.cover.spine) / book.cover.height}vh] w-auto object-contain antialiased aspect-[${book.cover.height}/${book.cover.spine}]`}
+              onMouseOver={() => {
+                setBook(book);
+              }}
+            />
+          ))}
       </div>
     </div>
   );

@@ -1,11 +1,80 @@
+"use client";
+
 import Header from "@/components/header";
 import Footer from "../sections/footer";
+import { caligraphy } from "../fonts";
+import { Book, books as defaultBooks } from "../books";
+import { BookCard } from "../sections/home-books";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { FaSearch } from "react-icons/fa";
+import { useState } from "react";
 
 export default function Page() {
+  const [searchTerm, setSearchTerm] = useState<string>("");
+  const [books, setBooks] = useState<Book[]>(Object.values(defaultBooks));
+
   return (
     <main className="bg-white min-h-screen flex flex-col gap-0">
       <Header page={1} />
-      <div className="h-screen"></div>
+      <div className={"min-h-screen flex flex-col gap-4 p-8 "}>
+        <div className="flex justify-between items-center mb-12">
+          <h1 className={"text-5xl " + caligraphy.className}>Browse Books</h1>
+          <div className="w-full max-w-screen-sm">
+            <div className="hidden md:flex item-center">
+              <Input
+                className="border-stone-400 shadow-none rounded-r-none border-r-0"
+                placeholder="Search..."
+                onChange={(e) => {
+                  setSearchTerm(e.target.value);
+                  setBooks(
+                    Object.values(defaultBooks).filter((thebook) =>
+                      JSON.stringify(thebook)
+                        .toLowerCase()
+                        .includes(e.target.value.toLowerCase()),
+                    ),
+                  );
+                }}
+                value={searchTerm}
+              />
+              <Button
+                variant="outline"
+                className="cursor-pointer !bg-transparent shadow-none !border-stone-400 rounded-l-none disabled:hover:bg-transparent hover:!bg-stone-300"
+                disabled={searchTerm.length === 0}
+                onClick={() => {
+                  setBooks(
+                    Object.values(defaultBooks).filter((thebook) =>
+                      JSON.stringify(thebook)
+                        .toLowerCase()
+                        .includes(searchTerm.toLowerCase()),
+                    ),
+                  );
+                }}
+              >
+                Search
+                <FaSearch />
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {books &&
+            (Object.values(books) as Book[]).map((book) => (
+              <BookCard
+                key={book.id}
+                image={book.image}
+                title={book.title}
+                author={book.author}
+                description={book.description}
+                coverwidth={book.cover.width * 600}
+                coverheight={book.cover.height * 600}
+                price={book.price}
+                id={book.id}
+              />
+            ))}
+        </div>
+      </div>
+
       <Footer />
     </main>
   );

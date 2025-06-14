@@ -35,10 +35,11 @@ export default function Footer() {
             <h2 className={caligraphy.className}>Libri Latini</h2>
             <p>
               The books in the store for Latin and Greek books linked at the
-              header as "Libri Latini" does not fall under any of the "about us"
-              or copyright information found here. It is only linked as it is
-              run by the same person. There are however plans for the future to
-              merge the content of that store with {"Ashes & Ink"}.
+              header as &quot;Libri Latini&quot; does not fall under any of the
+              &quot;about us&quot; or copyright information found here. It is
+              only linked as it is run by the same person. There are however
+              plans for the future to merge the content of that store with{" "}
+              {"Ashes & Ink"}.
             </p>
             <Link href="https://press.lewoof.xyz" target="_blank">
               Click here to visit.

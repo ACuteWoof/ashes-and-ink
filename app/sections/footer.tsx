@@ -62,9 +62,8 @@ export default function Footer() {
             rights to.
           </p>
           <p>
-            If you want a book to be made for you alone and do not want it to To
-            request a book, you can contact us from the contact form, or through
-            any of our socials.
+            To request a book, you can contact us from the contact form, or
+            through any of our socials.
           </p>
         </div>
         <div id="contact">

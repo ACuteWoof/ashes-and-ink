@@ -45,29 +45,29 @@ export default async function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 prose prose-stone">
-            <div className="flex flex-col">
-              <h4>Navigation</h4>
-              <Link href="/">Home</Link>
-              <Link href="/books">Books</Link>
-              <Link href="https://press.lewoof.xyz">Libri Latini</Link>
-              <Link href="https://www.lulu.com/spotlight/ashesandink">Us On Lulu</Link>
-            </div>
-            <div className="flex flex-col">
-              <h4>Social</h4>
-              <Link href="https://discord.gg/ngp9hJPjt9">Discord</Link>
-              <Link href="https://instagram.com/ashesandink.classics">
-                Instagram
-              </Link>
-              <Link href="#contact">Contact</Link>
-            </div>
-            <div className="flex flex-col">
-              <h4>Information</h4>
-              <Link href="#about">
-	      What We Do
-              </Link>
-              <Link href="#copyright">Copyright</Link>
-              <Link href="#request">Request Books</Link>
-            </div>
+	      {/*      <div className="flex flex-col"> */}
+	      {/*        <h4>Navigation</h4> */}
+	      {/*        <Link href="/">Home</Link> */}
+	      {/*        <Link href="/books">Books</Link> */}
+	      {/*        <Link href="https://press.lewoof.xyz">Libri Latini</Link> */}
+	      {/*        <Link href="https://www.lulu.com/spotlight/ashesandink">Us On Lulu</Link> */}
+	      {/*      </div> */}
+	      {/*      <div className="flex flex-col"> */}
+	      {/*        <h4>Social</h4> */}
+	      {/*        <Link href="https://discord.gg/ngp9hJPjt9">Discord</Link> */}
+	      {/*        <Link href="https://instagram.com/ashesandink.classics"> */}
+	      {/*          Instagram */}
+	      {/*        </Link> */}
+	      {/*        <Link href="#contact">Contact</Link> */}
+	      {/*      </div> */}
+	      {/*      <div className="flex flex-col"> */}
+	      {/*        <h4>Information</h4> */}
+	      {/*        <Link href="#about"> */}
+	      {/* What We Do */}
+	      {/*        </Link> */}
+	      {/*        <Link href="#copyright">Copyright</Link> */}
+	      {/*        <Link href="#request">Request Books</Link> */}
+	      {/*      </div> */}
           </div>
         </div>
         <div className="hidden lg:flex flex-col px-12 items-center justify-center w-full">

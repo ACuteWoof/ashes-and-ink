@@ -20,6 +20,9 @@ export default function Footer() {
             paperback or hardback books that are printed on demand when you
             place an order meaning we <b>never</b> run out of stock.
           </p>
+          <Link href="https://www.lulu.com/spotlight/ashesandink" target="_blank">
+            Us On Lulu
+          </Link>
         </div>
         <div>
           <h2 className={caligraphy.className}>Libri Latini</h2>

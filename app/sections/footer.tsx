@@ -34,7 +34,7 @@ export default function Footer() {
             the future to merge the content of that store with {"Ashes & Ink"}.
           </p>
           <Link href="https://press.lewoof.xyz" target="_blank">
-            Click here to visit.
+            Click here to visit
           </Link>
         </div>
         <div id="copyright">

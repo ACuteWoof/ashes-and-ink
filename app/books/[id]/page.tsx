@@ -60,15 +60,9 @@ export default async function Page({
     <main className="bg-white min-h-screen flex flex-col gap-0 overflow-hidden">
       <Header page={2} />
       <div className="p-12 lg:pr-0 grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <div className="flex justify-center">
+        <div className="flex justify-center lg:justify-start">
           <div className="prose prose-stone h-full w-full">
-            <Image
-              src={image}
-              alt={`${title} - ${author}`}
-              width={cover.width * 600}
-              height={cover.height * 600}
-              className={`object-contain md:hidden`}
-            />
+
             <h1 className="lg:text-5xl">
               <span className={caligraphy.className}>{title}</span>
               <br />
@@ -92,6 +86,13 @@ export default async function Page({
                   ))}
               </div>
             </div>
+            <Image
+              src={image}
+              alt={`${title} - ${author}`}
+              width={cover.width * 600}
+              height={cover.height * 600}
+              className={`object-contain lg:hidden`}
+            />
             <p className="text-justify">{description}</p>
             <h4>Details</h4>
             <ul className="columns-2 md:gap-4 lg:gap-8">

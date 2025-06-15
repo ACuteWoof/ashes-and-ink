@@ -13,7 +13,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="columns-1 lg:columns-2 gap-8 prose prose-stone !max-w-screen !w-full">
-        <div>
+        <div id="about">
           <h2 className={caligraphy.className}>What We Do</h2>
           <p>
             We take public domain texts from the internet and publish them as
@@ -34,7 +34,7 @@ export default function Footer() {
             Click here to visit.
           </Link>
         </div>
-        <div>
+        <div id="copyright">
           <h2 className={caligraphy.className}>Copyright</h2>
           <p>
             The content (the ASCII text alone) by themselves are not protected
@@ -48,7 +48,7 @@ export default function Footer() {
             in question.
           </p>
         </div>
-        <div>
+        <div id="request">
           <h2 className={caligraphy.className}>You Can Request a Book!</h2>
           <p>
             If a book that you would love to have is not available in our store,
@@ -67,7 +67,7 @@ export default function Footer() {
             any of our socials.
           </p>
         </div>
-        <div>
+        <div id="contact">
           <h2 className={"text-2xl " + caligraphy.className}>{"Contact Us"}</h2>
           <div>
             You can send us a message through the textbox below either for

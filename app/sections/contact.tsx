@@ -2,10 +2,8 @@
 
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { caligraphy } from "../fonts";
 import { useEffect, useState } from "react";
 import { sendWebhook } from "../actions";
-import Link from "next/link";
 
 export default function Contact() {
   const [message, setMessage] = useState<string>("");

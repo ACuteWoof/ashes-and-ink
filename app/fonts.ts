@@ -1,9 +1,9 @@
 import {
   Cormorant_SC,
-  Cormorant_Upright,
+  Gentium_Book_Plus,
+  Gentium_Plus,
   IBM_Plex_Serif,
-  Parisienne,
-  UnifrakturMaguntia,
+  Quintessential,
 } from "next/font/google";
 
 export const caligraphy = Cormorant_SC({
@@ -11,7 +11,7 @@ export const caligraphy = Cormorant_SC({
   weight: "600",
 });
 
-export const sans = IBM_Plex_Serif({
+export const base = Gentium_Plus({
   subsets: ["latin"],
   weight: "400",
 });

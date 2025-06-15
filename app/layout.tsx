@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { sans } from "./fonts";
+import { base } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Ashes & Ink",
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sans.className} antialiased scroll-smooth`}>
+      <body className={`${base.className} antialiased scroll-smooth`}>
         {children}
       </body>
     </html>

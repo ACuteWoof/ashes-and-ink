@@ -27,11 +27,11 @@ export default function BookStack({
   return (
     <div
       className={
-        "h-full max-h-screen flex gap-1 w-max flex-nowrap " + className
+        "hidden lg:flex h-full max-h-screen gap-1 w-max flex-nowrap " + className
       }
     >
       <div
-        className={`hidden h-[80vh] w-[${widthvh}vh] bg-contain md:flex relative aspect-[${coverheight}/${coverwidth}]`}
+        className={`h-[80vh] w-[${widthvh}vh] bg-contain flex relative aspect-[${coverheight}/${coverwidth}]`}
       >
         <div className="absolute z-50 border-r border-stone-200/20 w-[5%] h-[80vh] left-0" />
         <Image
@@ -42,7 +42,7 @@ export default function BookStack({
           className={`z-0 min-h-[80vh] h-[80vh] max-h-[80vh] w-auto object-contain antialiased aspect-[${coverheight}/${coverwidth}]`}
         />
       </div>
-      <div className="hidden md:flex gap-1">
+      <div className="flex gap-1">
         {spines &&
           spines.map((spine, i) => (
             <Image

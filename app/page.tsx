@@ -6,6 +6,7 @@ import { display } from "./fonts";
 import { books } from "./books";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default async function Home() {
   const shuffledBooks = Object.values(books)
@@ -27,48 +28,25 @@ export default async function Home() {
               className={`object-contain`}
             />
           </div>
-          <p className="hidden lg:block w-full max-w-96">
-            Bringing classic books back in style to a people of the modern
-            Fahrenheit 451 dystopia.
-          </p>
-          <div className="flex flex-col items-center lg:items-end lg:pr-12">
+
+          <div className="flex flex-col gap-12 items-center lg:items-start lg:pr-12">
             <h1
               className={
-                "text-center lg:text-right text-[15vmin] md:text-7xl lg:text-7xl xl:text-8xl " + display.className
+                "text-[20vw] lg:text-[20vh] leading-[20vw] lg:leading-[20vh] " +
+                display.className
               }
             >
               {"Ashes & Ink"}
             </h1>
-            <span className="lg:text-right text-lg lg:text-xl">
-              is a classics publishing house.
-            </span>
+	    <div className="flex gap-4">
+	    {/* <Button variant="secondary">Contact Us</Button> */}
+	    {/* <Button>Browse Our Books Now!</Button> */}
+	    </div>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 prose prose-stone">
-	      {/*      <div className="flex flex-col"> */}
-	      {/*        <h4>Navigation</h4> */}
-	      {/*        <Link href="/">Home</Link> */}
-	      {/*        <Link href="/books">Books</Link> */}
-	      {/*        <Link href="https://press.lewoof.xyz">Libri Latini</Link> */}
-	      {/*        <Link href="https://www.lulu.com/spotlight/ashesandink">Us On Lulu</Link> */}
-	      {/*      </div> */}
-	      {/*      <div className="flex flex-col"> */}
-	      {/*        <h4>Social</h4> */}
-	      {/*        <Link href="https://discord.gg/ngp9hJPjt9">Discord</Link> */}
-	      {/*        <Link href="https://instagram.com/ashesandink.classics"> */}
-	      {/*          Instagram */}
-	      {/*        </Link> */}
-	      {/*        <Link href="#contact">Contact</Link> */}
-	      {/*      </div> */}
-	      {/*      <div className="flex flex-col"> */}
-	      {/*        <h4>Information</h4> */}
-	      {/*        <Link href="#about"> */}
-	      {/* What We Do */}
-	      {/*        </Link> */}
-	      {/*        <Link href="#copyright">Copyright</Link> */}
-	      {/*        <Link href="#request">Request Books</Link> */}
-	      {/*      </div> */}
-          </div>
+          <p className="hidden lg:block w-full max-w-96">
+            Bringing classic books back in style to a people of the modern
+            Fahrenheit 451 dystopia.
+          </p>
         </div>
         <div className="hidden lg:flex flex-col px-12 items-center justify-center w-full">
           <HeroBooks books={shuffledBooks} />

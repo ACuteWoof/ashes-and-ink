@@ -31,10 +31,10 @@ export default async function Home() {
             Bringing classic books back in style to a people of the modern
             Fahrenheit 451 dystopia.
           </p>
-          <div className="flex flex-col items-center lg:items-end pr-12">
+          <div className="flex flex-col items-center lg:items-end lg:pr-12">
             <h1
               className={
-                "lg:text-right text-[15vmin] md:text-7xl lg:text-7xl xl:text-8xl " + display.className
+                "text-center lg:text-right text-[15vmin] md:text-7xl lg:text-7xl xl:text-8xl " + display.className
               }
             >
               {"Ashes & Ink"}

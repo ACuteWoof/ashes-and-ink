@@ -21,17 +21,6 @@ export default function Footer() {
               paperback or hardback books that are printed on demand when you
               place an order meaning we <b>never</b> run out of stock.
             </p>
-
-            <p>
-              If you want a book to be made for you alone and do not want it to
-              be published on our site, the content can be anything that you
-              have the rights to.
-            </p>
-            <p>
-              If you want a book to be made for you alone and do not want it to
-              To request a book, you can contact us from the contact form, or
-              through any of our socials.
-            </p>
             <h2 className={caligraphy.className}>Libri Latini</h2>
             <p>
               The books in the store for Latin and Greek books linked at the
@@ -62,6 +51,16 @@ export default function Footer() {
               store, you can request it to be made by us for you as long as the
               content you want in the book is under the public domain in the US,
               UK, and the EU.
+            </p>
+            <p>
+              If you want a book to be made for you alone and do not want it to
+              be published on our site, the content can be anything that you
+              have the rights to.
+            </p>
+            <p>
+              If you want a book to be made for you alone and do not want it to
+              To request a book, you can contact us from the contact form, or
+              through any of our socials.
             </p>
             <h2 className={"text-2xl " + caligraphy.className}>
               {"Contact Us"}

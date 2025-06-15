@@ -37,7 +37,7 @@ export const books: { [key: string]: Book } = {
     coverparts: {
       front: "/white-nights-and-notes-from-underground/front.png",
       spine: "/white-nights-and-notes-from-underground/spine.png",
-      back: "/white-nights-and-notes-from-underground/book.png",
+      back: "/white-nights-and-notes-from-underground/back.png",
     },
     title: "White Nights & Notes from Underground",
     author: "Fyodor Dostoevsky",

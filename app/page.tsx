@@ -29,19 +29,20 @@ export default async function Home() {
             />
           </div>
 
-          <div className="flex flex-col gap-12 items-center lg:items-start lg:pr-12">
+          <div className="flex flex-col items-center lg:items-start lg:pr-12">
             <h1
               className={
-                "text-[20vw] lg:text-[20vh] leading-[20vw] lg:leading-[20vh] " +
+                "text-[15vmin] lg:text-[20vh] lg:leading-[20vh] " +
                 display.className
               }
             >
               {"Ashes & Ink"}
             </h1>
-	    <div className="flex gap-4">
-	    {/* <Button variant="secondary">Contact Us</Button> */}
-	    {/* <Button>Browse Our Books Now!</Button> */}
-	    </div>
+            <p className="lg:hidden">is a classics publishing house.</p>
+            <div className="flex gap-4">
+              {/* <Button variant="secondary">Contact Us</Button> */}
+              {/* <Button>Browse Our Books Now!</Button> */}
+            </div>
           </div>
           <p className="hidden lg:block w-full max-w-96">
             Bringing classic books back in style to a people of the modern

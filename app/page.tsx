@@ -27,7 +27,7 @@ export default async function Home() {
               className={`object-contain`}
             />
           </div>
-          <p className="hidden lg:block text-lg lg:text-xl w-full max-w-96">
+          <p className="hidden lg:block w-full max-w-96">
             Bringing classic books back in style to a people of the modern
             Fahrenheit 451 dystopia.
           </p>

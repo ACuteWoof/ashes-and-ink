@@ -50,6 +50,7 @@ export default async function Home() {
               <Link href="/">Home</Link>
               <Link href="/books">Books</Link>
               <Link href="https://press.lewoof.xyz">Libri Latini</Link>
+              <Link href="https://www.lulu.com/spotlight/ashesandink">Us On Lulu</Link>
             </div>
             <div className="flex flex-col">
               <h4>Social</h4>

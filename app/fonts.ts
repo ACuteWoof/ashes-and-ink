@@ -6,9 +6,14 @@ import {
   Quintessential,
 } from "next/font/google";
 
+export const display = Cormorant_SC({
+  subsets: ["latin"],
+  weight: "700",
+});
+
 export const caligraphy = Cormorant_SC({
   subsets: ["latin"],
-  weight: "600",
+  weight: "400",
 });
 
 export const base = Gentium_Plus({

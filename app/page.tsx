@@ -2,7 +2,7 @@ import Header from "@/components/header";
 import HeroBooks from "./sections/hero";
 import HomeBooks from "./sections/home-books";
 import Footer from "./sections/footer";
-import { caligraphy } from "./fonts";
+import { caligraphy, display } from "./fonts";
 import { books } from "./books";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,19 +27,19 @@ export default async function Home() {
               className={`object-contain`}
             />
           </div>
-          <p className="text-lg lg:text-xl w-full max-w-96">
+          <p className="hidden lg:block text-lg lg:text-xl w-full max-w-96">
             Bringing classic books back in style to a people of the modern
             Fahrenheit 451 dystopia.
           </p>
-          <div className="flex flex-col items-end">
+          <div className="flex flex-col items-center lg:items-end pr-12">
             <h1
               className={
-                "text-[15vmin] lg:text-8xl xl:text-9xl " + caligraphy.className
+                "lg:text-right text-[15vmin] md:text-7xl lg:text-7xl xl:text-8xl " + display.className
               }
             >
               {"Ashes & Ink"}
             </h1>
-            <span className="text-lg lg:text-xl">
+            <span className="lg:text-right text-lg lg:text-xl">
               is a classics publishing house.
             </span>
           </div>

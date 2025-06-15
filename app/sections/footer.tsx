@@ -83,7 +83,7 @@ export default function Footer() {
             </ul>
           </div>
           <h3 className={"text-2xl " + caligraphy.className}>
-            {"Send Anonymous Message"}
+            {"Send Us a Message"}
           </h3>
           <Contact />
         </div>

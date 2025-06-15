@@ -4,7 +4,7 @@ import Contact from "./contact";
 
 export default function Footer() {
   return (
-    <footer className="p-8 pb-12 flex flex-col items-center bg-stone-100">
+    <footer className="p-8 pb-12 px-12 flex flex-col items-center bg-stone-100">
       <div className="flex flex-col items-center justify-center py-12">
         <div className="border-y-2 border-y-stone-950 md:min-w-md text-center w-fit py-8 px-12">
           <h1 className={"text-3xl " + caligraphy.className}>
@@ -12,7 +12,7 @@ export default function Footer() {
           </h1>
         </div>
       </div>
-      <div className="columns-1 lg:columns-2 gap-8 prose prose-stone !max-w-screen !w-full">
+      <div className="columns-1 lg:columns-2 gap-8 prose prose-stone !max-w-[130ch] !w-full">
         <div id="about">
           <h2 className={caligraphy.className}>What We Do</h2>
           <p>

@@ -60,7 +60,7 @@ export default async function Page({
     <main className="bg-white min-h-screen flex flex-col gap-0 overflow-hidden">
       <Header page={2} />
       <div className="p-12 lg:pr-0 grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <div className="flex justify-center lg:justify-start">
+        <div className="flex justify-center">
           <div className="prose prose-stone h-full w-full">
 
             <h1 className="lg:text-5xl">

@@ -27,6 +27,7 @@ export type Book = {
   dimensions: string;
   buyLinks: BuyLink[];
   explicit: boolean;
+  keywords: string[];
   translator?: string;
   isbn?: string;
 };
@@ -62,6 +63,7 @@ export const books: { [key: string]: Book } = {
     dimensions: "Novella (5 x 8 in / 127 x 203 mm)",
     explicit: false,
     translator: "Constance Garnett",
+    keywords: ["White Nights", "Notes from Underground", "Nastenka", "Liza", "Dostoevsky", "Fyodor", "Constance", "Garnett", "Russian"],
     buyLinks: [
       {
         from: "Lulu Bookstore",
@@ -97,6 +99,7 @@ export const books: { [key: string]: Book } = {
     dimensions: "Novella (5 x 8 in / 127 x 203 mm)",
     explicit: false,
     translator: "Constance Garnett",
+    keywords: ["Dostoevsky", "Fyodor", "Fyodor Dostoevsky", "Constance", "Constance Garnett", "Garnett", "Raskolnikov", "Sonya", "Razumihin"],
     buyLinks: [
       {
         from: "Lulu Bookstore",
@@ -132,6 +135,7 @@ export const books: { [key: string]: Book } = {
     binding: "Paperback Perfect Bound",
     dimensions: "Novella (5 x 8 in / 127 x 203 mm)",
     explicit: false,
+    keywords: ["Jules", "Jules Verne", "Verne", "Around The World In 80 Days", "Around The World In Eighty Days", "Eighty", "80", "Around", "World", "Around World", "Around The World"],
     buyLinks: [
       {
         from: "Lulu Bookstore",

@@ -2,7 +2,7 @@ import Header from "@/components/header";
 import HeroBooks from "./sections/hero";
 import HomeBooks from "./sections/home-books";
 import Footer from "./sections/footer";
-import { caligraphy, display } from "./fonts";
+import { display } from "./fonts";
 import { books } from "./books";
 import Image from "next/image";
 import Link from "next/link";

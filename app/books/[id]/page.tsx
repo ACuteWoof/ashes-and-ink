@@ -62,7 +62,6 @@ export default async function Page({
       <div className="p-12 lg:pr-0 grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="flex justify-center">
           <div className="prose prose-stone h-full w-full">
-
             <h1 className="lg:text-5xl">
               <span className={caligraphy.className}>{title}</span>
               <br />
@@ -76,12 +75,14 @@ export default async function Page({
               </span>
             </h1>
             <div className="prose prose-stone">
-              <h4>Buy for ${price} at: </h4>
+              <h4>Buy at: </h4>
               <div className="flex gap-2 flex-wrap">
                 {buyLinks &&
                   buyLinks.map((linkInfo, i) => (
                     <Link key={i} href={linkInfo.link} target="_blank">
-                      <Button>{linkInfo.from}</Button>
+                      <Button>
+                        {linkInfo.from} for ${linkInfo.price}
+                      </Button>
                     </Link>
                   ))}
               </div>
@@ -137,7 +138,7 @@ export default async function Page({
             coverwidth={cover.width}
             coverheight={cover.height}
             image={image}
-	    backImage={coverparts.back}
+            backImage={coverparts.back}
             spines={new Array(3).fill([coverparts.spine, cover.spine])}
           />
         </div>
@@ -147,4 +148,3 @@ export default async function Page({
     </main>
   );
 }
-

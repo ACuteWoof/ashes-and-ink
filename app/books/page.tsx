@@ -17,28 +17,35 @@ export default function Page() {
     <main className="bg-white min-h-screen flex flex-col gap-0">
       <Header page={1} />
       <div className={"min-h-screen flex flex-col gap-4 p-8 "}>
-        <div className="flex justify-between items-center mb-12">
+        <div className="flex justify-between items-center">
           <h1 className={"text-5xl " + caligraphy.className}>Browse Books</h1>
           <div className="w-full max-w-screen-sm">
-              <Input
-                placeholder="Search..."
-                onChange={(e) => {
-                  setSearchTerm(e.target.value);
-                  setBooks(
-                    Object.values(defaultBooks).filter((thebook) =>
-                      JSON.stringify(thebook)
-                        .toLowerCase()
-                        .includes(e.target.value.toLowerCase()),
-                    ),
-                  );
-                }}
-                value={searchTerm}
-              />
+            <Input
+              placeholder="Search..."
+              onChange={(e) => {
+                setSearchTerm(e.target.value);
+                setBooks(
+                  Object.values(defaultBooks).filter((thebook) =>
+                    JSON.stringify(thebook)
+                      .toLowerCase()
+                      .includes(e.target.value.toLowerCase()),
+                  ),
+                );
+              }}
+              value={searchTerm}
+            />
+          </div>
+          <div className="flex justify-between items-center mb-12">
+            <div></div>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8">
           {books &&
-            (Object.values(books) as Book[]).map((book) => (
+            (
+              Object.values(books).toSorted((a, b) =>
+                a.title.localeCompare(b.title),
+              ) as Book[]
+            ).map((book) => (
               <BookCard
                 key={book.id}
                 image={book.image}

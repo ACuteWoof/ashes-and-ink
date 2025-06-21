@@ -1,4 +1,5 @@
-type Binding = "Paperback Perfect Bound" | "Hardcover";
+type Binding = "Paperback Perfect Bound" | "Hardcover Case Wrap" | "Hardcover Linen Wrap";
+type Paper = "60# Cream — Uncoated"  | "60# White — Uncoated" | "80# White — Coated"
 type BuyLink = { from: string; link: string; price: number };
 
 export type Book = {
@@ -19,7 +20,7 @@ export type Book = {
   id: string;
   price: number;
   copyright: string;
-  paper: string;
+  paper: Paper;
   contributors: string;
   category: string;
   language: string;

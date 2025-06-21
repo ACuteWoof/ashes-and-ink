@@ -33,7 +33,7 @@ export default function HeroBooks({ books }: { books: Book[] }) {
       </Link>
       <div className="hidden lg:flex gap-1">
         {books &&
-          books.map((book, i) => (
+          books.slice(0, 3).map((book, i) => (
             <Link href={`/books/${book.id}`} key={i}>
               <Image
                 src={book.coverparts.spine}

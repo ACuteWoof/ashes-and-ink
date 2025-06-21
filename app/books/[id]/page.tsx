@@ -43,10 +43,11 @@ export default async function Page({
     author,
     description,
     cover,
-    price,
+    illustrator,
     copyright,
     contributors,
     category,
+    paper,
     language,
     pages,
     binding,
@@ -70,6 +71,11 @@ export default async function Page({
                 {translator && (
                   <span className={"text-sm " + caligraphy.className}>
                     <span>Translated by</span> {translator}
+                  </span>
+                )}{" "}
+                {illustrator && (
+                  <span className={"text-sm " + caligraphy.className}>
+                    <span>Illustrated by</span> {illustrator}
                   </span>
                 )}
               </span>
@@ -113,6 +119,9 @@ export default async function Page({
               </li>
               <li>
                 <strong>Page Count:</strong> {pages}{" "}
+              </li>
+              <li>
+                <strong>Paper Type:</strong> {paper}{" "}
               </li>
               <li>
                 <strong>Binding:</strong> {binding}{" "}

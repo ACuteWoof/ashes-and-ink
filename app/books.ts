@@ -19,6 +19,7 @@ export type Book = {
   id: string;
   price: number;
   copyright: string;
+  paper: string;
   contributors: string;
   category: string;
   language: string;
@@ -29,6 +30,7 @@ export type Book = {
   explicit: boolean;
   keywords: string[];
   translator?: string;
+  illustrator?: string;
   isbn?: string;
   maxPrice?: number;
 };
@@ -42,6 +44,7 @@ export const books: { [key: string]: Book } = {
       back: "/white-nights-and-notes-from-underground/back.png",
     },
     title: "White Nights & Notes from Underground",
+    paper: "60# Cream — Uncoated",
     author: "Fyodor Dostoevsky",
     description: `This is a compilation of what are two of the perhaps greatest and most well-known short stories of Fyodor Dostoevsky, exploring views of life in 19th century Petersburg. In his own words in the author’s note to Notes from Underground:
 
@@ -91,6 +94,7 @@ export const books: { [key: string]: Book } = {
       spine: "/crime-and-punishment/spine.png",
     },
     title: "Crime and Punishment",
+    paper: "60# Cream — Uncoated",
     author: "Fyodor Dostoevsky",
     description: `The novel follows a desperate former law student, Raskolnikov, stricken by poverty and taken by the idea of the Great Man who discards all traditional morality. Raskolnikov commits a murder hoping to gain enough money from the murder to lift him out of poverty, but realises that he is not the great man he thought himself to be, and that he cannot escape his conscience. The remaining chapters then follow his punishment and end with his hope for redemption.`,
     cover: {
@@ -147,6 +151,7 @@ export const books: { [key: string]: Book } = {
     },
     id: "845jw4k",
     price: 13.58,
+    paper: "60# Cream — Uncoated",
     copyright:
       "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
     contributors:
@@ -176,6 +181,59 @@ export const books: { [key: string]: Book } = {
         from: "Lulu Bookstore",
         link: "https://www.lulu.com/shop/jules-verne-and-george-makepeace-towle-and-vithushan-sutharsan/around-the-world-in-eighty-days/paperback/product-845jw4k.html",
         price: 13.58,
+      },
+    ],
+  },
+  "959ded5": {
+    image: "/jane-eyre/front.png",
+    coverparts: {
+      front: "/jane-eyre/front.png",
+      back: "/jane-eyre/back.png",
+      spine: "/jane-eyre/spine.png",
+    },
+    title: "Jane Eyre",
+    paper: "60# Cream — Uncoated",
+    author: "Charlotte Brontë",
+    description: `This 19th century gothic bildungsroman is an autobiography of a fictional protagonist, Jane Eyre. In the 38 chapters of the novel, Jane outlines, starting from her childhood, five epochs of her life, describing in perfect prose the development of her morals, faith, and character leading up to her marriage.
+
+This copy includes the original illustrations from F.H Townsend, and footnotes to translate the French and German phrases — which are not translated in the original copies as the people of Charlotte Brontë’s time and place were expected to be fluent in these languages.`,
+    cover: {
+      height: 8,
+      width: 5,
+      spine: 1.366,
+    },
+    id: "959ded5",
+    price: 21.4,
+    copyright:
+      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+    contributors:
+      "By: Charlotte Brontë, Illustrated by: Frederick Henry Townsend, Compiled by: Vithushan Sutharsan",
+    category: "Fiction",
+    illustrator: "Frederick Henry Townsend",
+    language: "English",
+    pages: 580,
+    binding: "Paperback Perfect Bound",
+    dimensions: "Novella (5 x 8 in / 127 x 203 mm)",
+    explicit: false,
+    keywords: [
+      "jane",
+      "jane eyre",
+      "adele",
+      "rochester",
+      "reed",
+      "rivers",
+      "lowood",
+      "gateshead",
+      "helen",
+      "romance",
+      "gothic",
+      "victorian",
+    ],
+    buyLinks: [
+      {
+        from: "Lulu Bookstore",
+        link: "https://www.lulu.com/shop/charlotte-bront%C3%AB-and-frederick-henry-townsend-and-vithushan-sutharsan/jane-eyre/paperback/product-959ded5.html",
+        price: 21.4,
       },
     ],
   },

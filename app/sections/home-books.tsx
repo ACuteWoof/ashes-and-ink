@@ -12,7 +12,7 @@ export default function HomeBooks() {
           <h1 className={"text-3xl " + caligraphy.className}>Our Books</h1>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 items-center">
         {books &&
           (Object.values(books) as Book[]).map((book) => (
             <BookCard

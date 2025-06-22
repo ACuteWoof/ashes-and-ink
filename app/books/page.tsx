@@ -17,9 +17,8 @@ export default function Page() {
     <main className="bg-white min-h-screen flex flex-col gap-0">
       <Header page={1} />
       <div className={"min-h-screen flex flex-col gap-4 p-8 "}>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center w-full mb-8">
           <h1 className={"text-5xl " + caligraphy.className}>Browse Books</h1>
-          <div className="w-full max-w-screen-sm">
             <Input
               placeholder="Search..."
               onChange={(e) => {
@@ -33,11 +32,8 @@ export default function Page() {
                 );
               }}
               value={searchTerm}
+	      className="max-w-screen-sm"
             />
-          </div>
-          <div className="flex justify-between items-center mb-12">
-            <div></div>
-          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8">
           {books &&

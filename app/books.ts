@@ -1,5 +1,11 @@
-type Binding = "Paperback Perfect Bound" | "Hardcover Case Wrap" | "Hardcover Linen Wrap";
-type Paper = "60# Cream — Uncoated"  | "60# White — Uncoated" | "80# White — Coated"
+type Binding =
+  | "Paperback Perfect Bound"
+  | "Hardcover Case Wrap"
+  | "Hardcover Linen Wrap";
+type Paper =
+  | "60# Cream — Uncoated"
+  | "60# White — Uncoated"
+  | "80# White — Coated";
 type BuyLink = { from: string; link: string; price: number };
 
 export type Book = {
@@ -235,6 +241,60 @@ This copy includes the original illustrations from F.H Townsend, and footnotes t
         from: "Lulu Bookstore",
         link: "https://www.lulu.com/shop/charlotte-bront%C3%AB-and-frederick-henry-townsend-and-vithushan-sutharsan/jane-eyre/paperback/product-959ded5.html",
         price: 21.4,
+      },
+    ],
+  },
+  nv9e8nk: {
+    image: "/the-picture-of-dorian-gray/front.png",
+    coverparts: {
+      front: "/the-picture-of-dorian-gray/front.png",
+      back: "/the-picture-of-dorian-gray/back.png",
+      spine: "/the-picture-of-dorian-gray/spine.png",
+    },
+    title: "The Picture of Dorian Gray",
+    paper: "60# Cream — Uncoated",
+    author: "Oscar Wilde",
+    description: `As the subject of controversies, censorship and multiple rewrites, The Picture of Dorian Gray is still beloved by and is relevant to many across the globe. The novel follows the story of a painting and the man represented in the painting, Dorian Gray. Dorian Gray, the most beautiful man in London, tempted by Lord Henry's speeches on youth and beauty, as if it were not directly intended, curses himself by a wish to a life where it is no longer he who bears his sin and age but the painting. The novel then continues on how, when he later realises that his wish for youth has been granted, he treats his life and the people who are unfortunate enough to know him.`,
+    cover: {
+      height: 8,
+      width: 5,
+      spine: 0.605,
+    },
+    id: "nv9e8nk",
+    price: 12.38,
+    copyright:
+      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+    contributors: "By: Oscar Wilde, Compiled by: Vithushan Sutharsan",
+    category: "Fiction",
+    language: "English",
+    pages: 242,
+    binding: "Paperback Perfect Bound",
+    dimensions: "Novella (5 x 8 in / 127 x 203 mm)",
+    explicit: false,
+    keywords: [
+      "dorian gray",
+      "lord henry",
+      "basil hallward",
+      "dorian",
+      "gray",
+      "oscar wilde",
+      "oscar",
+      "wilde",
+      "hedonism",
+      "ethics",
+      "morality",
+      "beauty",
+      "sibyl vane",
+      "the portrait of dorian gray",
+      "the painting of dorian gray",
+      "portrait",
+      "painting",
+    ],
+    buyLinks: [
+      {
+        from: "Lulu Bookstore",
+        link: "https://www.lulu.com/shop/oscar-wilde-and-vithushan-sutharsan/the-picture-of-dorian-gray/paperback/product-nv9e8nk.html",
+        price: 12.38,
       },
     ],
   },

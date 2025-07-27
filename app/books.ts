@@ -62,7 +62,7 @@ export const books: { [key: string]: Book } = {
       spine: 0.533,
     },
     id: "gjyd6pv",
-    price: 12.89,
+    price: 13.2,
     copyright:
       "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
     contributors:
@@ -110,7 +110,7 @@ export const books: { [key: string]: Book } = {
       spine: 1.49,
     },
     id: "845yvg2",
-    price: 22.67,
+    price: 23.4,
     copyright:
       "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
     contributors:
@@ -157,7 +157,7 @@ export const books: { [key: string]: Book } = {
       spine: 0.601,
     },
     id: "845jw4k",
-    price: 13.58,
+    price: 13.92,
     paper: "60# Cream — Uncoated",
     copyright:
       "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
@@ -210,7 +210,7 @@ This copy includes the original illustrations from F.H Townsend, and footnotes t
       spine: 1.366,
     },
     id: "959ded5",
-    price: 21.4,
+    price: 22.08,
     copyright:
       "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
     contributors:

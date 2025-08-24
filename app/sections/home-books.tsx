@@ -34,13 +34,15 @@ export default function HomeBooks() {
       </div>
       {Object.values(books).length > 5 && (
         <div className="h-[20vh] bg-gradient-to-b from-transparent via-stone-50 to-stone-50 absolute bottom-0 left-0 right-0 flex flex-col justify-center items-center">
-          <Button
-            variant="outline"
-            className="bg-stone-700 text-stone-100"
-            size="lg"
-          >
-            Browse All Books
-          </Button>
+          <Link href={"/books"}>
+            <Button
+              variant="outline"
+              className="bg-stone-700 text-stone-100"
+              size="lg"
+            >
+              Browse All Books
+            </Button>
+          </Link>
         </div>
       )}
     </div>

@@ -27,13 +27,16 @@ export default function BookStack({
   return (
     <div
       className={
-        "hidden lg:flex h-full max-h-screen gap-1 w-max flex-nowrap " + className
+        "hidden lg:flex h-full max-h-screen gap-1 w-max flex-nowrap " +
+        className
       }
     >
       <div
         className={`h-[80vh] w-[${widthvh}vh] bg-contain flex relative aspect-[${coverheight}/${coverwidth}]`}
       >
-        <div className="absolute z-50 border-r border-stone-200/20 w-[5%] h-[80vh] left-0" />
+        <div
+          className={`absolute z-50 border-${showBack ? "l" : "r"} border-stone-200/20 w-[5%] h-[80vh] ${showBack ? "right" : "left"}-0`}
+        />
         <Image
           src={showBack ? backImage : image}
           alt={`${title} - ${author}`}

@@ -6,9 +6,13 @@ type Paper =
   | "60# Cream — Uncoated"
   | "60# White — Uncoated"
   | "80# White — Coated";
+
 type BuyLink = { from: string; link: string; price: number };
 
+type Category = "Classic Fiction" | "Classic Non-Fiction";
+
 export type Book = {
+  sortingCategory: Category;
   image: string;
   coverparts: {
     front: string;
@@ -44,6 +48,7 @@ export type Book = {
 
 export const books: { [key: string]: Book } = {
   gjyd6pv: {
+    sortingCategory: "Classic Fiction",
     image: "/white-nights-and-notes-from-underground/front.png",
     coverparts: {
       front: "/white-nights-and-notes-from-underground/front.png",
@@ -94,6 +99,7 @@ export const books: { [key: string]: Book } = {
     ],
   },
   "845yvg2": {
+    sortingCategory: "Classic Fiction",
     image: "/crime-and-punishment/front.png",
     coverparts: {
       front: "/crime-and-punishment/front.png",
@@ -142,6 +148,7 @@ export const books: { [key: string]: Book } = {
     ],
   },
   "845jw4k": {
+    sortingCategory: "Classic Fiction",
     image: "/around-the-world-in-eighty-days/front.png",
     coverparts: {
       front: "/around-the-world-in-eighty-days/front.png",
@@ -192,6 +199,7 @@ export const books: { [key: string]: Book } = {
     ],
   },
   "959ded5": {
+    sortingCategory: "Classic Fiction",
     image: "/jane-eyre/front.png",
     coverparts: {
       front: "/jane-eyre/front.png",
@@ -245,6 +253,7 @@ This copy includes the original illustrations from F.H Townsend, and footnotes t
     ],
   },
   nv9e8nk: {
+    sortingCategory: "Classic Fiction",
     image: "/the-picture-of-dorian-gray/front.png",
     coverparts: {
       front: "/the-picture-of-dorian-gray/front.png",
@@ -299,6 +308,7 @@ This copy includes the original illustrations from F.H Townsend, and footnotes t
     ],
   },
   e7d475j: {
+    sortingCategory: "Classic Fiction",
     image: "/wuthering-heights/front.png",
     coverparts: {
       front: "/wuthering-heights/front.png",
@@ -364,6 +374,7 @@ The novel follows the life of Heathcliff, from his childhood to his death. Heath
     ],
   },
   jed8z4p: {
+    sortingCategory: "Classic Non-Fiction",
     image: "/nicomachean/front.png",
     coverparts: {
       front: "/nicomachean/front.png",
@@ -455,6 +466,7 @@ The work is centered around how to live best, treating ethics as a practical sci
   },
 
   "458eyp8": {
+    sortingCategory: "Classic Non-Fiction",
     image: "/augustine-confessions/front.png",
     coverparts: {
       front: "/augustine-confessions/front.png",

@@ -29,6 +29,7 @@ export default function HomeBooks() {
               coverheight={book.cover.height * 600}
               price={book.price}
               id={book.id}
+	      binding={book.binding}
             />
           ))}
       </div>
@@ -58,6 +59,7 @@ export function BookCard({
   coverheight,
   price,
   id,
+  binding,
 }: {
   image: string;
   title: string;
@@ -67,6 +69,7 @@ export function BookCard({
   coverheight: number;
   price: number;
   id: string;
+  binding: string;
 }) {
   return (
     <Link href={"/books/" + id}>
@@ -87,7 +90,7 @@ export function BookCard({
               {title} - {author}
             </h4>
             <p className="line-clamp-4">
-              <strong>{price} USD</strong>
+              <strong>{binding}, {price} USD</strong>
               <br />
               {description}
             </p>

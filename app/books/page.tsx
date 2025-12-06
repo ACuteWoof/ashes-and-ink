@@ -44,6 +44,7 @@ export default function Page() {
             ).map((book) => (
               <BookCard
                 key={book.id}
+		binding={book.binding}
                 image={book.image}
                 title={book.title}
                 author={book.author}

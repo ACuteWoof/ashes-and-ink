@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { base } from "./fonts";
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "Ashes & Ink",
@@ -18,6 +20,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${base.className} antialiased scroll-smooth`}>
         {children}
+	<Analytics />
+	<SpeedInsights />
       </body>
     </html>
   );

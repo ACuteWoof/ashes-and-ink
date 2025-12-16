@@ -70,8 +70,7 @@ export const books: { [key: string]: Book } = {
     price: 13.2,
     copyright:
       "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
-    contributors:
-      "By: Fyodor Dostoevsky, Translated by: Constance Garnett, Compiled by: Vithushan Sutharsan",
+    contributors: "By: Fyodor Dostoevsky, Translated by: Constance Garnett",
     category: "Fiction",
     language: "English",
     pages: 210,
@@ -119,8 +118,7 @@ export const books: { [key: string]: Book } = {
     price: 23.4,
     copyright:
       "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
-    contributors:
-      "By: Fyodor Dostoevsky, Translated by: Constance Garnett, Compiled by: Vithushan Sutharsan",
+    contributors: "By: Fyodor Dostoevsky, Translated by: Constance Garnett",
     category: "Fiction",
     language: "English",
     pages: 635,
@@ -168,8 +166,7 @@ export const books: { [key: string]: Book } = {
     paper: "60# Cream — Uncoated",
     copyright:
       "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
-    contributors:
-      "By: Jules Verne, Translated by: George Makepeace Towle, Compiled by: Vithushan Sutharsan",
+    contributors: "By: Jules Verne, Translated by: George Makepeace Towle",
     category: "Fiction",
     translator: "George Makepeace Towle",
     language: "English",
@@ -222,7 +219,7 @@ This copy includes the original illustrations from F.H Townsend, and footnotes t
     copyright:
       "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
     contributors:
-      "By: Charlotte Brontë, Illustrated by: Frederick Henry Townsend, Compiled by: Vithushan Sutharsan",
+      "By: Charlotte Brontë, Illustrated by: Frederick Henry Townsend",
     category: "Fiction",
     illustrator: "Frederick Henry Townsend",
     language: "English",
@@ -273,7 +270,7 @@ This copy includes the original illustrations from F.H Townsend, and footnotes t
     price: 12.38,
     copyright:
       "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
-    contributors: "By: Oscar Wilde, Compiled by: Vithushan Sutharsan",
+    contributors: "By: Oscar Wilde",
     category: "Fiction",
     language: "English",
     pages: 242,
@@ -330,7 +327,7 @@ The novel follows the life of Heathcliff, from his childhood to his death. Heath
     price: 14.32,
     copyright:
       "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
-    contributors: "By: Emily Brontë, Compiled by: Vithushan Sutharsan",
+    contributors: "By: Emily Brontë",
     category: "Fiction",
     language: "English",
     pages: 361,
@@ -396,8 +393,7 @@ The work is centered around how to live best, treating ethics as a practical sci
     price: 16.8,
     copyright:
       "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
-    contributors:
-      "By: Aristotle, Translated by: William Daniel Ross, Compiled by: Vithushan Sutharsan",
+    contributors: "By: Aristotle, Translated by: William Daniel Ross",
     category: "Reference",
     language: "English",
     pages: 360,
@@ -487,7 +483,7 @@ The work is centered around how to live best, treating ethics as a practical sci
     copyright:
       "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
     contributors:
-      "By: Augustine of Hippo, Translated by: Edward Bouverie Pusey, Compiled by: Vithushan Sutharsan",
+      "By: Augustine of Hippo, Translated by: Edward Bouverie Pusey",
     category: "Religion & Spirituality",
     language: "English",
     pages: 294,
@@ -610,5 +606,62 @@ The work is centered around how to live best, treating ethics as a practical sci
         price: 21.77,
       },
     ],
+  },
+
+  "84j2zek": {
+    title: "St. Francis of Assisi & St. Thomas Aquinas",
+    author: "G. K. Chesterton",
+    description: `A compilation of two biographies of two great saints written by G.K. Chesterton.
+
+"This book makes no pretence to be anything but a popular sketch of a great historical character who ought to be more popular. Its aim will be achieved, if it leads those who have hardly even heard of St. Thomas Aquinas to read about him in better books. But from this necessary limitation certain consequences follow, which should perhaps be allowed for from the start." - G.K. Chesterton (introductory note to St. Thomas Aquinas)`,
+    cover: {
+      height: 8,
+      width: 5,
+      spine: 0.875,
+    },
+    id: "84j2zek",
+    price: 22.73,
+    copyright:
+      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+    contributors: "By: G. K. Chesterton",
+    category: "Biography",
+    language: "English",
+    pages: 259,
+    binding: "Hardcover Case Wrap",
+    dimensions: "Novella (5 x 8 in / 127 x 203 mm)",
+    explicit: false,
+    keywords: [
+      "St. Francis of Assisi",
+      "St. Thomas Aquinas",
+      "G. K. Chesterton",
+      "Biography",
+      "Biographies",
+      "Thomas Aquinas",
+      "Francis of Assisi",
+      "Francisco de Assis",
+      "Francisco de Assisi",
+      "Franciscus de Assisi",
+      "Franciscus de Assis",
+      "Assisi",
+      "Assis",
+      "Aquinas",
+      "Aquino",
+      "Aquino",
+    ],
+    buyLinks: [
+      {
+        from: "Lulu Bookstore",
+        link: "https://www.lulu.com/shop/gk-chesterton/st-francis-of-assisi-st-thomas-aquinas/hardcover/product-84j2zek.html",
+        price: 22.73,
+      },
+    ],
+    coverparts: {
+      spine: "/francis-and-thomas/spine.png",
+      front: "/francis-and-thomas/front.png",
+      back: "/francis-and-thomas/back.png",
+    },
+    image: "/francis-and-thomas/front.png",
+    paper: "60# White — Uncoated",
+    sortingCategory: "Classic Non-Fiction",
   },
 };

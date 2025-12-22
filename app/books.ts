@@ -730,7 +730,7 @@ The work is centered around how to live best, treating ethics as a practical sci
       width: 5,
       spine: 0.813,
     },
-    id: "nv9e8nk",
+    id: "v8qv2wj",
     price: 22.1,
     copyright:
       "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",

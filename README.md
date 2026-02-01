@@ -27,14 +27,12 @@ Contact us to request a book.
 
 ## Copyright
 
-The content (the ASCII text alone) by themselves are not protected
-by copyright. The texts are in the public domain and can be found on
-the internet.
+The content of the books (the text alone) by themselves are not protected by
+copyright. The texts are in the public domain and can be found on the internet.
 
-The cover design overall and the formatting are protected by
-copyright, but each book is different so you are advised to use the
-title-verso page to identify the copyright information for the book
-in question.
+The cover design overall and the formatting are protected by copyright, but
+each book is different so you are advised to use the title-verso page to
+identify the copyright information for the book in question.
 
 The site is licensed under the MIT license:
 

@@ -23,8 +23,8 @@ through any of our socials.
 ## Contact Us
 
 - Email: [contact@lewoof.xyz](mailto:contact@lewoof.xyz)
-- [Discord](https://discord.gg/ngp9hJPjt9)
-- [Instagram](https://instagram.com/ashesandink.classics)
+- Discord: [https://discord.gg/ngp9hJPjt9](https://discord.gg/ngp9hJPjt9)
+- Instagram: [@ashesandink.store](https://instagram.com/ashesandink.store)
 
 ## Copyright
 

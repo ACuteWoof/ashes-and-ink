@@ -17,8 +17,7 @@ If you want a book to be made for you alone and do not want it to be
 published on our site, the content can be anything that you have the
 rights to.
 
-To request a book, you can contact us from the contact form, or
-through any of our socials.
+Contact us to request a book.
 
 ## Contact Us
 

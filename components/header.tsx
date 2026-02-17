@@ -19,7 +19,7 @@ export default function Header({ page }: { page?: number }) {
           width={500}
           height={500}
           alt="Ashes and Ink Logo"
-          className="h-8 w-auto"
+          className="h-8 w-auto dark:invert"
         />
         <h3 className={"text-xl font-semibold " + caligraphy.className}>
           Ashes & Ink

@@ -58,11 +58,11 @@ export default async function Page({
   } = book;
 
   return (
-    <main className="bg-white min-h-screen flex flex-col gap-0 overflow-hidden">
+    <main className="bg-white dark:bg-black min-h-screen dark:text-stone-200 flex flex-col gap-0 overflow-hidden">
       <Header page={2} />
       <div className="p-12 lg:pr-0 grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="flex justify-center">
-          <div className="prose prose-stone h-full w-full">
+          <div className="prose dark:prose-invert prose-stone h-full w-full">
             <h1 className="lg:text-5xl">
               <span className={caligraphy.className}>{title}</span>
               <br />
@@ -80,7 +80,6 @@ export default async function Page({
                 )}
               </span>
             </h1>
-            <div className="prose prose-stone">
               <h4>Buy at: </h4>
               <div className="flex gap-2 flex-wrap">
                 {buyLinks &&
@@ -92,7 +91,6 @@ export default async function Page({
                     </Link>
                   ))}
               </div>
-            </div>
             <Image
               src={image}
               alt={`${title} - ${author}`}

@@ -6,9 +6,9 @@ import { Book, books } from "../books";
 
 export default function HomeBooks() {
   return (
-    <div className="flex flex-col gap-4 p-12 pt-8 lg:max-h-[200vh] bg-stone-50 overflow-hidden relative items-center">
+    <div className="flex flex-col gap-4 p-12 pt-8 lg:max-h-[200vh] bg-stone-50 dark:bg-stone-950 overflow-hidden relative items-center">
       <div className="flex flex-col items-center justify-center py-12">
-        <div className="border-y-2 border-y-stone-950 md:min-w-md text-center w-fit py-8 px-12">
+        <div className="border-y-2 border-y-stone-950 dark:border-y-stone-300 md:min-w-md text-center w-fit py-8 px-12">
           <h1 className={"text-3xl " + caligraphy.className}>Our Books</h1>
         </div>
       </div>
@@ -34,7 +34,7 @@ export default function HomeBooks() {
           ))}
       </div>
       {Object.values(books).length > 5 && (
-        <div className="h-[20vh] bg-gradient-to-b from-transparent via-stone-50 to-stone-50 absolute bottom-0 left-0 right-0 flex flex-col justify-center items-center">
+        <div className="h-[20vh] bg-gradient-to-b from-transparent dark:via-stone-950 via-stone-50 to-stone-50 dark:to-stone-950 absolute bottom-0 left-0 right-0 flex flex-col justify-center items-center z-50">
           <Link href={"/books"}>
             <Button
               variant="outline"
@@ -75,7 +75,7 @@ export function BookCard({
     <Link href={"/books/" + id}>
       <div className="flex flex-col hover:cursor-pointer bg-stone-800 p-4 gap-4 hover:bg-stone-800/90">
         <div className="border border-stone-200/10 relative">
-          <div className="absolute z-50 border-r border-stone-200/20 w-[5%] h-full left-0" />
+          <div className="absolute z-10 border-r border-stone-200/20 w-[5%] h-full left-0" />
           <Image
             src={image}
             alt={`${title} - ${author}`}

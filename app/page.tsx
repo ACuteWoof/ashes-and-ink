@@ -15,7 +15,7 @@ export default async function Home() {
     .map(({ value }) => value);
 
   return (
-    <main className="bg-white dark:bg-black min-h-screen flex flex-col gap-0 overflow-x-hidden dark:text-stone-200">
+    <main className="bg-white dark:bg-black min-h-screen flex flex-col gap-0 overflow-x-hidden dark:text-stone-200 dark:dark">
       <Header page={0} />
       <div className="lg:-[calc(100vh-var(--spacing)*16)] flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:gap-12 p-8 lg:p-0 lg:py-12 lg:pl-12">
         <div className="flex flex-col gap-8 justify-between pb-12">

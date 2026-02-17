@@ -58,7 +58,7 @@ export default async function Page({
   } = book;
 
   return (
-    <main className="bg-white dark:bg-black min-h-screen dark:text-stone-200 flex flex-col gap-0 overflow-hidden">
+    <main className="bg-white dark:bg-black min-h-screen dark:text-stone-200 flex flex-col gap-0 overflow-hidden dark:dark">
       <Header page={2} />
       <div className="p-12 lg:pr-0 grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="flex justify-center">

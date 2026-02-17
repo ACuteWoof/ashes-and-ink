@@ -14,7 +14,7 @@ export default function Page() {
   const [books, setBooks] = useState<Book[]>(Object.values(defaultBooks));
 
   return (
-    <main className="bg-white dark:bg-black min-h-screen flex flex-col gap-0 dark:text-stone-200">
+    <main className="bg-white dark:bg-black min-h-screen flex flex-col gap-0 dark:text-stone-200 dark:dark">
       <Header page={1} />
       <div className={"min-h-screen flex flex-col gap-4 p-8 "}>
         <div className="flex justify-between items-center w-full mb-8">

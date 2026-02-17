@@ -69,7 +69,7 @@ export const books: { [key: string]: Book } = {
     id: "gjyd6pv",
     price: 13.2,
     copyright:
-      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+      "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
     contributors: "By: Fyodor Dostoevsky, Translated by: Constance Garnett",
     category: "Fiction",
     language: "English",
@@ -117,7 +117,7 @@ export const books: { [key: string]: Book } = {
     id: "845yvg2",
     price: 23.4,
     copyright:
-      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+      "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
     contributors: "By: Fyodor Dostoevsky, Translated by: Constance Garnett",
     category: "Fiction",
     language: "English",
@@ -165,7 +165,7 @@ export const books: { [key: string]: Book } = {
     price: 13.92,
     paper: "60# Cream — Uncoated",
     copyright:
-      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+      "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
     contributors: "By: Jules Verne, Translated by: George Makepeace Towle",
     category: "Fiction",
     translator: "George Makepeace Towle",
@@ -217,7 +217,7 @@ This copy includes the original illustrations from F.H Townsend, and footnotes t
     id: "959ded5",
     price: 22.08,
     copyright:
-      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+      "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
     contributors:
       "By: Charlotte Brontë, Illustrated by: Frederick Henry Townsend",
     category: "Fiction",
@@ -269,7 +269,7 @@ This copy includes the original illustrations from F.H Townsend, and footnotes t
     id: "nv9e8nk",
     price: 12.38,
     copyright:
-      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+      "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
     contributors: "By: Oscar Wilde",
     category: "Fiction",
     language: "English",
@@ -326,7 +326,7 @@ The novel follows the life of Heathcliff, from his childhood to his death. Heath
     id: "e7d475j",
     price: 14.32,
     copyright:
-      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+      "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
     contributors: "By: Emily Brontë",
     category: "Fiction",
     language: "English",
@@ -392,7 +392,7 @@ The work is centered around how to live best, treating ethics as a practical sci
     id: "jed8z4p",
     price: 16.8,
     copyright:
-      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+      "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
     contributors: "By: Aristotle, Translated by: William Daniel Ross",
     category: "Reference",
     language: "English",
@@ -481,7 +481,7 @@ The work is centered around how to live best, treating ethics as a practical sci
     id: "458eyp8",
     price: 15.22,
     copyright:
-      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+      "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
     contributors:
       "By: Augustine of Hippo, Translated by: Edward Bouverie Pusey",
     category: "Religion & Spirituality",
@@ -573,7 +573,7 @@ The work is centered around how to live best, treating ethics as a practical sci
     sortingCategory: "Classic Fiction",
     binding: "Hardcover Case Wrap",
     copyright:
-      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+      "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
     contributors: "By: Mary Shelley",
     category: "Fiction",
     language: "English",
@@ -622,7 +622,7 @@ The work is centered around how to live best, treating ethics as a practical sci
     id: "84j2zek",
     price: 22.73,
     copyright:
-      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+      "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
     contributors: "By: G. K. Chesterton",
     category: "Biography",
     language: "English",
@@ -676,7 +676,7 @@ The work is centered around how to live best, treating ethics as a practical sci
     id: "nvjpqq2",
     price: 22.01,
     copyright:
-      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+      "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
     contributors: "By: G. K. Chesterton",
     category: "Philosophy",
     language: "English",
@@ -733,7 +733,7 @@ The work is centered around how to live best, treating ethics as a practical sci
     id: "v8qv2wj",
     price: 22.1,
     copyright:
-      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+      "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
     contributors: "By: Oscar Wilde",
     category: "Fiction",
     language: "English",
@@ -791,7 +791,7 @@ PDF of the source book: https://files.lewoof.xyz/books/theworkofstoptat00philuof
     id: "e76vvp6",
     price: 17.57,
     copyright:
-      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+      "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
     contributors:
       "By: Saint Optatus of Milevis, Translated by: Rev. O. R. Vassall-Phillips, Text by: Roger Pearse",
     category: "Religion & Spirituality",

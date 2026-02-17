@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${base.className} antialiased scroll-smooth`}>
+      <body className={`${base.className} antialiased scroll-smooth dark:dark`}>
         {children}
 	<Analytics />
 	<SpeedInsights />

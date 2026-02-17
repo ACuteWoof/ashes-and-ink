@@ -768,6 +768,59 @@ The work is centered around how to live best, treating ethics as a practical sci
       },
     ],
   },
+
+  "e76vvp6": {
+    sortingCategory: "Classic Non-Fiction",
+    image: "/optatus/front.png",
+    coverparts: {
+      front: "/optatus/front.png",
+      back: "/optatus/back.png",
+      spine: "/optatus/spine.png",
+    },
+    title: "The Work Against The Donatists",
+    paper: "60# Cream — Uncoated",
+    author: "Saint Optatus of Milevis",
+    description: `Optatus of Milevis wrote his sole surviving work around 370 AD. The work was directed against those called by their opponents ‘Donatists’, who comprised nearly the entire church of Roman Africa and were orthodox in belief and practice. The polemic of Optatus is one of our primary sources for the origins of Donatism, and was written in response to a book by the Donatist bishop Parmenian.
+
+PDF of the source book: https://files.lewoof.xyz/books/theworkofstoptat00philuoft.pdf`,
+    cover: {
+      height: 8,
+      width: 5,
+      spine: 0.943,
+    },
+    id: "e76vvp6",
+    price: 17.57,
+    copyright:
+      "Vithushan Sutharsan. All Rights Reserved - Standard Copyright License",
+    contributors:
+      "By: Saint Optatus of Milevis, Translated by: Rev. O. R. Vassall-Phillips, Text by: Roger Pearse",
+    category: "Religion & Spirituality",
+    language: "English",
+    pages: 392,
+    binding: "Paperback Perfect Bound",
+    dimensions: "Novella (5 x 8 in / 127 x 203 mm)",
+    explicit: false,
+    keywords: [
+"optatus",
+"catholic",
+"peter",
+"donatism",
+"against donatists",
+"donatists",
+"contra",
+"milevis",
+"st. optatus",
+    ],
+    buyLinks: [
+      {
+        from: "Lulu Bookstore",
+        link: "https://www.lulu.com/shop/saint-optatus-of-milevis-and-roger-pearse-and-rev-o-r-vassall-phillips-and-vithushan-sutharsan/the-work-against-the-donatists/paperback/product-e76vvp6.html",
+        price: 17.57,
+      },
+    ],
+  },
+
+
 };
 
 

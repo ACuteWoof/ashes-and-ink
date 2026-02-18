@@ -821,7 +821,7 @@ PDF of the source book: https://files.lewoof.xyz/books/theworkofstoptat00philuof
   },
 
 
-  "e76vvp6": {
+  "gjpk6pk": {
     sortingCategory: "Classic Non-Fiction",
     image: "/optatus-hardcover/front.png",
     coverparts: {

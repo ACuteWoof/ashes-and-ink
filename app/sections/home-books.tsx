@@ -6,7 +6,7 @@ import { Book, books } from "../books";
 
 export default function HomeBooks() {
   return (
-    <div className="flex flex-col gap-4 p-12 pt-8 lg:max-h-[200vh] bg-stone-50 dark:bg-stone-950 overflow-hidden relative items-center">
+    <div className="flex flex-col gap-4 p-12 pt-8 lg:max-h-screen bg-stone-50 dark:bg-stone-950 overflow-hidden relative items-center">
       <div className="flex flex-col items-center justify-center py-12">
         <div className="border-y-2 border-y-stone-950 dark:border-y-stone-300 md:min-w-md text-center w-fit py-8 px-12">
           <h1 className={"text-3xl " + caligraphy.className}>Our Books</h1>

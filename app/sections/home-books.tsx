@@ -2,20 +2,20 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { caligraphy } from "../fonts";
 import Link from "next/link";
-import { Book, books } from "../books";
+import { Book, featured } from "../books";
 
 export default function HomeBooks() {
   return (
-    <div className="flex flex-col gap-4 p-12 pt-8 lg:max-h-screen bg-stone-50 dark:bg-stone-950 overflow-hidden relative items-center">
+    <div className="flex flex-col gap-4 p-12 pt-8 max-h-screen bg-stone-50 dark:bg-stone-950 overflow-hidden relative items-center">
       <div className="flex flex-col items-center justify-center py-12">
         <div className="border-y-2 border-y-stone-950 dark:border-y-stone-300 md:min-w-md text-center w-fit py-8 px-12">
           <h1 className={"text-3xl " + caligraphy.className}>Our Books</h1>
         </div>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-8 items-center">
-        {books &&
+        {featured &&
           (
-            Object.values(books).toSorted((a, b) =>
+            featured.toSorted((a, b) =>
               a.title.localeCompare(b.title),
             ) as Book[]
           ).map((book) => (
@@ -33,7 +33,7 @@ export default function HomeBooks() {
             />
           ))}
       </div>
-      {Object.values(books).length > 5 && (
+      {featured.length > 6 && (
         <div className="h-[20vh] bg-gradient-to-b from-transparent dark:via-stone-950 via-stone-50 to-stone-50 dark:to-stone-950 absolute bottom-0 left-0 right-0 flex flex-col justify-center items-center z-50">
           <Link href={"/books"}>
             <Button

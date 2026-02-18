@@ -871,8 +871,6 @@ PDF of the source book: https://files.lewoof.xyz/books/theworkofstoptat00philuof
       },
     ],
   },
-
-
 };
 
-
+export const featured = Object.values(books).slice(0, 12);

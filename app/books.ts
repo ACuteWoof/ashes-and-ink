@@ -786,17 +786,17 @@ PDF of the source book: https://files.lewoof.xyz/books/theworkofstoptat00philuof
     cover: {
       height: 8,
       width: 5,
-      spine: 0.943,
+      spine: 0.961,
     },
     id: "e76vvp6",
-    price: 17.57,
+    price: 17.76,
     copyright:
       "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
     contributors:
       "By: Saint Optatus of Milevis, Translated by: Rev. O. R. Vassall-Phillips, Text by: Roger Pearse",
     category: "Religion & Spirituality",
     language: "English",
-    pages: 392,
+    pages: 400,
     binding: "Paperback Perfect Bound",
     dimensions: "Novella (5 x 8 in / 127 x 203 mm)",
     explicit: false,
@@ -815,7 +815,7 @@ PDF of the source book: https://files.lewoof.xyz/books/theworkofstoptat00philuof
       {
         from: "Lulu Bookstore",
         link: "https://www.lulu.com/shop/saint-optatus-of-milevis-and-roger-pearse-and-rev-o-r-vassall-phillips-and-vithushan-sutharsan/the-work-against-the-donatists/paperback/product-e76vvp6.html",
-        price: 17.57,
+        price: 17.76,
       },
     ],
   },
@@ -841,14 +841,14 @@ PDF of the source book: https://files.lewoof.xyz/books/theworkofstoptat00philuof
       spine: 1.188,
     },
     id: "gjpk6pk",
-    price: 25.92,
+    price: 26.11,
     copyright:
       "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
     contributors:
       "By: Saint Optatus of Milevis, Translated by: Rev. O. R. Vassall-Phillips, Text by: Roger Pearse",
     category: "Religion & Spirituality",
     language: "English",
-    pages: 392,
+    pages: 400,
     binding: "Hardcover Case Wrap",
     dimensions: "Novella (5 x 8 in / 127 x 203 mm)",
     explicit: false,
@@ -867,7 +867,7 @@ PDF of the source book: https://files.lewoof.xyz/books/theworkofstoptat00philuof
       {
         from: "Lulu Bookstore",
         link: "https://www.lulu.com/shop/saint-optatus-of-milevis-and-roger-pearse-and-rev-o-r-vassall-phillips-and-vithushan-sutharsan/the-work-against-the-donatists/hardcover/product-gjpk6pk.html",
-        price: 25.92,
+        price: 26.11,
       },
     ],
   },

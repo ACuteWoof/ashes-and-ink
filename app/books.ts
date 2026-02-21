@@ -871,6 +871,61 @@ PDF of the source book: https://files.lewoof.xyz/books/theworkofstoptat00philuof
       },
     ],
   },
+
+  "v8wed9q": {
+    sortingCategory: "Classic Non-Fiction",
+    image: "/compendium-theologiae/front.png",
+    coverparts: {
+      front: "/compendium-theologiae/front.png",
+      back: "/compendium-theologiae/back.png",
+      spine: "/compendium-theologiae/spine.png",
+    },
+    title: "Compendium Theologiae",
+    paper: "60# Cream — Uncoated",
+    author: "Saint Thomas Aquinas",
+    description: `“Man’s salvation consists in knowing the truth, so that the human mind may not be confused by various errors; in aiming for the right goal, so that man may not fall away from true happiness by pursuing the wrong ends; and in carrying out the law of justice, so that he may not besmirch himself with various vices.
+[...]
+Wherefore, my dearest son Reginald, so that I may hand on to you a compendious teaching about the Christian religion, which you can keep continually before your eyes, my entire aim in the present work revolves around these three virtues. I shall treat first of faith, then of hope, and lastly of charity, both because the Apostle’s order has this sequence and because right reason demands it. Love cannot be rightly ordered unless the proper goal of our hope is established; nor can this happen if knowledge of the truth is lacking. Therefore, the first thing necessary is faith, by which you may come to a knowledge of the truth. Second, hope, that your aim may be fixed on the right end. Third, love is necessary, that your affections may be perfectly put in order.”`,
+    cover: {
+      height: 8,
+      width: 5,
+      spine: 0.715,
+    },
+    id: "v8wed9q",
+    price: 15.14,
+    copyright:
+      "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
+    contributors:
+      "By: Saint Thomas Aquinas, Translated by: Cyril Vollert, S.J.",
+    category: "Religion & Spirituality",
+    language: "English",
+    pages: 291,
+    binding: "Paperback Perfect Bound",
+    dimensions: "Novella (5 x 8 in / 127 x 203 mm)",
+    explicit: false,
+    keywords: [
+"aquinas",
+"thomas",
+"thomas aquinas",
+"st thomas",
+"saint thomas",
+"saint thomas aquinas",
+"compendium",
+"compendium of theology",
+"theology",
+"theologiae",
+"compendium theologiae",
+    ],
+    buyLinks: [
+      {
+        from: "Lulu Bookstore",
+        link: "https://www.lulu.com/shop/saint-thomas-aquinas-and-cyril-vollert-sj-and-vithushan-sutharsan/compendium-theologiae/paperback/product-v8wed9q.html",
+        price: 15.14,
+      },
+    ],
+  },
 };
+
+
 
 export const featured = Object.values(books).slice(0, 12);

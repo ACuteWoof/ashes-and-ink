@@ -974,6 +974,53 @@ Wherefore, my dearest son Reginald, so that I may hand on to you a compendious t
       },
     ],
   },
+
+
+
+  "2m89zvp": {
+    paper: "60# White — Uncoated",
+    dimensions: "Novella (5 x 8 in / 127 x 203 mm)",
+    image: "/heretics/front.png",
+    coverparts: {
+      front: "/heretics/front.png",
+      back: "/heretics/back.png",
+      spine: "/heretics/spine.png",
+    },
+    title: "Heretics",
+    author: "G. K. Chesterton",
+    description:
+      "“In the fifteenth century men cross-examined and tormented a man because he preached some immoral attitude; in the nineteenth century we fêted and flattered Oscar Wilde because he preached such an attitude, and then broke his heart in penal servitude because he carried it out. It may be a question which of the two methods was the more cruel; there can be no kind of question which was the more ludicrous. The age of the Inquisition has not at least the disgrace of having produced a society which made an idol of the very same man for preaching the very same things which it made him a convict for practising.”",
+    cover: {
+      height: 8,
+      width: 5,
+      spine: 0.452,
+    },
+    id: "2m89zvp",
+    price: 12.43,
+    sortingCategory: "Classic Non-Fiction",
+    binding: "Paperback Perfect Bound",
+    copyright:
+      "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
+    contributors: "By: G.K. Chesterton",
+    category: "Religion & Spirituality",
+    language: "English",
+    pages: 178,
+    explicit: false,
+    keywords: [
+	   "chesteton", 
+	   "gk chesterton", 
+	   "g.k. chesterton", 
+	   "heretics", 
+	   "orthodoxy"
+    ],
+    buyLinks: [
+      {
+        from: "Lulu Bookstore",
+        link: "https://www.lulu.com/shop/gk-chesterton/heretics/paperback/product-2m89zvp.html",
+        price: 12.43,
+      },
+    ],
+  },
 };
 
 

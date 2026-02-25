@@ -924,6 +924,56 @@ Wherefore, my dearest son Reginald, so that I may hand on to you a compendious t
       },
     ],
   },
+  "456wzjm": {
+    paper: "60# Cream — Uncoated",
+    dimensions: "Novella (5 x 8 in / 127 x 203 mm)",
+    image: "/oliver-twist/front.png",
+    coverparts: {
+      front: "/oliver-twist/front.png",
+      back: "/oliver-twist/back.png",
+      spine: "/oliver-twist/spine.png",
+    },
+    title: "Oliver Twist",
+    author: "Charles Dickens",
+    description:
+      "The fictional biography of an oprhan, Oliver Twist, this novel satirises child labour, domestic violence, the treatment of orphans, street children and bleak topics of the sort. We follow Oliver from his birth, his life at the workhouse, his escape from London, him as a criminal, and his reconnection with his family.",
+    cover: {
+      height: 8,
+      width: 5,
+      spine: 1.438,
+    },
+    id: "456wzjm",
+    price: 28.85,
+    sortingCategory: "Classic Fiction",
+    binding: "Hardcover Case Wrap",
+    copyright:
+      "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
+    contributors: "By: Charles Dickens, Illustrated by: George Cruikshank",
+    category: "Fiction",
+    language: "English",
+    pages: 514,
+    explicit: false,
+    keywords: [
+"oliver twist",
+"oliver",
+"nancy",
+"charles dickens",
+"dickens",
+"mr fang",
+"fang",
+"miss nancy",
+"rose",
+"maylie",
+"bumble",
+    ],
+    buyLinks: [
+      {
+        from: "Lulu Bookstore",
+        link: "https://www.lulu.com/shop/charles-dickens-and-george-cruikshank/oliver-twist/hardcover/product-456wzjm",
+        price: 28.85,
+      },
+    ],
+  },
 };
 
 

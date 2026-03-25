@@ -76,6 +76,9 @@ export default function Footer() {
             requesting books to be made or support in general. We are also on
             the following social media platforms:
             <ul>
+              <Link href="https://matrix.to/#/#ashes:matrix.lewoof.xyz">
+                <li>Matrix</li>{" "}
+              </Link>
               <Link href="https://discord.gg/ngp9hJPjt9">
                 <li>Discord</li>{" "}
               </Link>

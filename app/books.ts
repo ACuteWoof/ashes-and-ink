@@ -270,7 +270,7 @@ This copy includes the original illustrations from F.H Townsend, and footnotes t
     price: 12.38,
     copyright:
       "Vithushan Sutharsan. All Rights Reserved - Lulu Standard Copyright License",
-    contributors: "By: Oscar Wilde",
+    contributors: "By: Oscar Wilde. Cover art: Mad Wendigo Studio",
     category: "Fiction",
     language: "English",
     pages: 242,
